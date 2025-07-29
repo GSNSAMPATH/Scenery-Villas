@@ -10,7 +10,7 @@ interface ButtonProps {
 const Button: FC<ButtonProps> = ({
   color = 'yellow-300',
   size = 'md',
-  size0 = '5',
+  size0 = '6',
   children,
   ...props
 }) => {
