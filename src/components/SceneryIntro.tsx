@@ -18,7 +18,7 @@ export default function SceneryIntro() {
 
         {/* Book Now Button */}
         <div className="mb-20">
-          <Button color="yellow-400" size="4">
+          <Button color="yellow-400" size="3">
             Book Now
           </Button>
         </div>
