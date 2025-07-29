@@ -45,7 +45,7 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Enter your email"
-              className="px-4 py-2 rounded-full text-black w-full"
+              className="px-4 py-2 rounded-full text-gray-900 w-full sm:w-1/2 placeholder:text-gray-400 placeholder:font-semibold border border-gray-400"
             />
             <button
               style={{ backgroundColor: "var(--color-primary)", color: "#000" }}

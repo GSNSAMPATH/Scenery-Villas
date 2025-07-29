@@ -11,6 +11,8 @@ const config: Config = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         accent: "var(--color-accent)",
+        
+        buttonText: "hsl(var(--buttonText))",
       },
     },
   },
