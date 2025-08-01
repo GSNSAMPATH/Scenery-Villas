@@ -1,4 +1,3 @@
-// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,13 +5,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "var(--color-bg)",
-        text: "var(--color-text)",
+        background: "var(--background)",
+        background0: "var(--background0)",
+        foreground: "var(--foreground)",
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         accent: "var(--color-accent)",
-        
+        muted: "var(--color-muted)",
         buttonText: "hsl(var(--buttonText))",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
+        lobster: ['var(--font-lobster)', 'cursive'],
       },
     },
   },
@@ -20,3 +25,4 @@ const config: Config = {
 };
 
 export default config;
+

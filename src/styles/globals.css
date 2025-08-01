@@ -2,6 +2,7 @@
 
 :root {
   --background: #ffffff;
+  --background0: #f2f4f0;
   --foreground: #171717;
 
 
@@ -10,8 +11,9 @@
   --color-accent: #c29b41;
   --color-muted: #888888;
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+  
 }
 
 
@@ -20,13 +22,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-lobster: var(--font-lobster);
   --button-background: var(--color-primary);
+ 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --background0: #f2f4f0;
+    --foreground: #171717;
     --accent: 100 60% 40%; /* example green */
     --buttonText: 0 0% 100%; /* white */
     --button:var(--color-accent)

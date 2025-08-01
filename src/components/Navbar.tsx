@@ -72,13 +72,13 @@ const Navbar = () => {
 
             <button
               onClick={() => setShowCollectionModal(true)}
-              className="font-semibold flex justify-center items-center gap-1"
+              className=" gap-1"
               aria-haspopup="dialog"
             >
               Our Collection
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`w-4 h-4 transform transition-transform duration-300 ${
+                className={`w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180 justify-self-end ${
                   showCollectionModal ? "rotate-180" : "rotate-0"
                 }`}
                 fill="none"
@@ -87,7 +87,7 @@ const Navbar = () => {
                 strokeWidth={2}
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
+              </svg> */}
             </button>
 
             <Link href="#" onClick={() => setMenuOpen(false)} className="block">
@@ -116,7 +116,7 @@ const Navbar = () => {
         {/* Modal Overlay */}
         {showCollectionModal && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[60]"
+            className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[]"
             onClick={() => setShowCollectionModal(false)}
           >
             <div
