@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Button from "./Button";
-import { dmSans, lobster } from "../app/api/googlefont";
+import { dmSans, lobster } from "../app/googlefont";
 
 const villas = [
   {
@@ -25,6 +25,10 @@ const villas = [
   },
 ];
 
+const villaDescription = `
+  Villa Mandalay is a cozy 3-bedroom villa for up to 7 guests, featuring spacious living areas and a baby pool, ideal for families. Nearby, Tara Garden is a beautiful 4-bedroom colonial villa nestled in lush gardens, accommodating 8 guests and also offering a baby pool. For larger gatherings, Treetop Resort provides a spacious 5-bedroom villa for up to 25 guests, complete with a baby pool. Finally, Villa Desire is a private 6-bedroom villa for 12 guests, located 2 km from Bentota Beach, perfect for families or groups seeking a peaceful escape.
+`;
+
 export default function VillaCollection() {
   return (
     <section className="bg-[var(--background0)] px-4 py-16 text-[var(--foreground)]">
@@ -34,7 +38,7 @@ export default function VillaCollection() {
           <span className="text-green-900">Collection</span>
         </h2>
         <p className={`${dmSans.className} text-base sm:text-2xl mb-20 max-w-4xl mx-auto mt-20`}>
-          Villa Mandalay is a cozy 3-bedroom villa for up to 7 guests, featuring spacious living areas and a baby pool, ideal for families. Nearby, Tara Garden is a beautiful 4-bedroom colonial villa nestled in lush gardens, accommodating 8 guests and also offering a baby pool. For larger gatherings, Treetop Resort provides a spacious 5-bedroom villa for up to 25 guests, complete with a baby pool. Finally, Villa Desire is a private 6-bedroom villa for 12 guests, located 2 km from Bentota Beach, perfect for families or groups seeking a peaceful escape.
+          {villaDescription}
         </p>
 
         

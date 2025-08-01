@@ -1,7 +1,13 @@
 "use client";
 
-import { dmSans, lobster } from "@/app/api/googlefont";
+import { dmSans, lobster } from "@/app/googlefont";
 import Button from "./Button";
+
+const welcomeText = `Welcome to Scenery Villas, A collection of four private villas in Bentota, Sri Lanka.
+Each villa offers a unique experience designed for families and groups seeking a serene,
+comfortable retreat. Whether you're planning a family vacation, a group outing, or
+simply a relaxing getaway, Scenery Villas provides spacious accommodations,
+kids-friendly facilities, and tranquil surroundings.`;
 
 export default function SceneryIntro() {
   return (
@@ -14,11 +20,7 @@ export default function SceneryIntro() {
 
         {/* Introduction Text */}
         <p className={`${dmSans.className} text-base sm:text-2xl mb-20 max-w-4xl mx-auto`}>
-          Welcome to Scenery Villas, A collection of four private villas in Bentota, Sri Lanka.
-          Each villa offers a unique experience designed for families and groups seeking a serene,
-          comfortable retreat. Whether you're planning a family vacation, a group outing, or
-          simply a relaxing getaway, Scenery Villas provides spacious accommodations,
-          kids-friendly facilities, and tranquil surroundings.
+          {welcomeText}
         </p>
 
         {/* Book Now Button */}
