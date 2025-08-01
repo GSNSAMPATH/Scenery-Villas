@@ -33,7 +33,7 @@ export default function VillaCollection() {
   return (
     <section className="bg-[var(--background0)] px-4 py-16 text-[var(--foreground)]">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className={`${lobster.className} text-5xl font-bold mb-4 mt-20`}>
+        <h2 className={`${lobster.className} text-5xl font-bold mb-4 mt-10`}>
           <span className="text-black">Our </span>
           <span className="text-green-900">Collection</span>
         </h2>
@@ -65,9 +65,11 @@ export default function VillaCollection() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
-            <h3 className="text-white text-xl font-bold mb-2">{villa.name}</h3>
-            <p className="text-white text-sm">{villa.description}</p>
+        <div className="absolute inset-0 bg-black/40 
+          opacity-100 sm:opacity-0 sm:group-hover:opacity-100 
+          transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <h3 className="text-white text-xl font-bold mb-2">{villa.name}</h3>
+          <p className="text-white text-sm">{villa.description}</p>
         </div>
         </div>
 

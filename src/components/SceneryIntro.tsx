@@ -14,7 +14,7 @@ export default function SceneryIntro() {
     <section className="bg-white text-gray-800 py-40 px-4 sm:px-8 lg:px-24">
       <div className="max-w-6xl mx-auto text-center mb-24">
         {/* Heading */}
-        <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold mt-10 mb-18 text-green-900`}>
+        <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold mt-8 mb-18 text-green-900`}>
           Scenery Villas Sri Lanka
         </h1>
 
@@ -24,7 +24,7 @@ export default function SceneryIntro() {
         </p>
 
         {/* Book Now Button */}
-        <div className="mb-20 sm:mb-20">
+        <div className="mb-20 ">
           <Button color="yellow-400" size="3">Book Now</Button>
         </div>
       </div>
