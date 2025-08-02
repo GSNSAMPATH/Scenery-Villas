@@ -43,7 +43,7 @@ export default function VillaCollection() {
 
         
         <div className="mb-20">
-          <Button color="yellow-400 mb-20" size="3">
+          <Button color="black text-white mb-20" size="3">
             Contact US
           </Button>
         </div>

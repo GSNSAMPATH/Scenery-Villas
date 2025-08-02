@@ -4,9 +4,8 @@
   --background: #ffffff;
   --background0: #f2f4f0;
   --foreground: #171717;
-
-
-  --color-primary: #e6cc80; /* Gold */
+  --text: #ffffff;
+  --color-primary: #ffffff; /* Gold */
   --color-secondary: #141414; /* Deep Black */
   --color-accent: #c29b41;
   --color-muted: #888888;
@@ -32,6 +31,7 @@
     --background: #ffffff;
     --background0: #f2f4f0;
     --foreground: #171717;
+    --text: #ffffff;
     --accent: 100 60% 40%; /* example green */
     --buttonText: 0 0% 100%; /* white */
     --button:var(--color-accent)

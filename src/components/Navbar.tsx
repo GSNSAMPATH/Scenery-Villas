@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 bg-black text-yellow-400 w-full z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-black text-white w-full z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-xl font-bold">Senery Villa</div>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              <div className="absolute hidden group-hover:block bg-black text-yellow-400 mt-2 rounded shadow-md z-50">
+              <div className="absolute hidden group-hover:block bg-black text-white mt-2 rounded shadow-md z-50">
                 <Link href="#" className="block px-4 py-2 hover:text-white">
                   Villa A
                 </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link href="#">Blog</Link>
             <Link
               href="#"
-              className="bg-yellow-400 text-black font-bold px-5 py-2 rounded-full hover:bg-yellow-300"
+              className="bg-white text-black font-bold px-5 py-2 rounded-full"
             >
               Book Now
             </Link>
