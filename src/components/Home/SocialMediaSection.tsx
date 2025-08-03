@@ -1,29 +1,36 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useMemo } from "react";
 
 declare global {
   interface Window {
-    YT: any;
+    YT: typeof YT;
     onYouTubeIframeAPIReady: () => void;
   }
 }
 
-export default function SocialMediaSection() {
-  const shortsVideos = [
-    { id: "Vqr1tEv_E4s" },
-    { id: "CigTjNe-YuM" },
-    { id: "rAp94KYD0A4" },
-    { id: "MSz7wG2iOww" },
-    { id: "YKm6cm54-po" },
-    { id: "vYjBSdY3pUc" },
-    { id: "4rZzPYHtcVY" },
-    { id: "nS3PYnHgC2s" },
-    { id: "6qlMjFgIgxo" },
-    { id: "E8RH11BslRg" },
-  ];
+interface Video {
+  id: string;
+}
 
-  const playersRef = useRef<{ [key: string]: any }>({});
+export default function SocialMediaSection() {
+  const shortsVideos: Video[] = useMemo(
+    () => [
+      { id: "Vqr1tEv_E4s" },
+      { id: "CigTjNe-YuM" },
+      { id: "rAp94KYD0A4" },
+      { id: "MSz7wG2iOww" },
+      { id: "YKm6cm54-po" },
+      { id: "vYjBSdY3pUc" },
+      { id: "4rZzPYHtcVY" },
+      { id: "nS3PYnHgC2s" },
+      { id: "6qlMjFgIgxo" },
+      { id: "E8RH11BslRg" },
+    ],
+    []
+  );
+
+  const playersRef = useRef<Record<string, YT.Player>>({});
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -67,13 +74,15 @@ export default function SocialMediaSection() {
 
   const scroll = (direction: "left" | "right") => {
     if (!scrollRef.current) return;
-    const container = scrollRef.current;
-    const scrollAmount = 300;
-    container.scrollBy({ left: direction === "right" ? scrollAmount : -scrollAmount, behavior: "smooth" });
+    const scrollAmount = 200;
+    scrollRef.current.scrollBy({
+      left: direction === "right" ? scrollAmount : -scrollAmount,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <section className="bg-[var(--background0)] py-30 px-4 text-center relative">
+    <section className="bg-[var(--background0)] py-30 text-center relative">
       <h2 className="text-4xl sm:text-5xl font-bold mb-4">Watch Our YouTube Shorts</h2>
       <p className="text-md sm:text-lg font-medium text-gray-700 max-w-2xl mx-auto mb-8">
         Hover to preview real moments from Scenery Villa – just like YouTube!
@@ -103,8 +112,8 @@ export default function SocialMediaSection() {
       </button>
 
       {/* Video Scroll Container */}
-      <div className="overflow-x-auto scroll-hide px-6 mt-8 pb-10 ml-30 mr-30" ref={scrollRef}>
-        <div className="flex gap-8 w-fit">
+      <div className="overflow-x-auto px-6 mt-8 pb-10 scroll-hide ml-30 mr-30" ref={scrollRef}>
+        <div className="flex gap-8 w-fit mx-[8vw]">
           {shortsVideos.map(({ id }) => (
             <div
               key={id}
