@@ -50,31 +50,34 @@ export default function VillaCollection() {
 
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {villas.map((villa, index) => (
-        <div
-        key={index}
-        className="relative bg-[var(--card-bg)] rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all group"
-        >
-        <Image
-          src={villa.img}
-          alt={villa.name}
-          width={400} // add this
-          height={400} // add this
-          className="w-full h-[400px] object-cover object-center"
-        />
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-4 py-10 ml-10 mr-10">
+  {villas.map((villa, index) => (
+    <div
+      key={index}
+      className="relative aspect-[3/5] rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all group"
+    >
+      <Image
+        src={villa.img}
+        alt={villa.name}
+        fill
+        className="object-cover object-center"
+      />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 
-          opacity-100 sm:opacity-0 sm:group-hover:opacity-100 
-          transition-opacity duration-300 p-5 flex flex-col justify-end">
-          <h3 className="text-white text-xl font-bold mb-2">{villa.name}</h3>
-          <p className="text-white text-sm">{villa.description}</p>
-        </div>
-        </div>
-
-        ))}
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 
+        opacity-100 sm:opacity-0 sm:group-hover:opacity-100 
+        transition-opacity duration-300 p-5 flex flex-col justify-end">
+        <h3 className="text-white text-xl font-bold mb-2">{villa.name}</h3>
+        <p className="text-white text-sm">{villa.description}</p>
       </div>
+    </div>
+  ))}
+</div>
+
+
+
+
+
     </section>
   );
 }
