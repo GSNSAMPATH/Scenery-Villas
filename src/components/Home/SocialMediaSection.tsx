@@ -236,7 +236,7 @@ export default function SocialMediaSection() {
 
       {/* Video Scroll Container */}
       <div className="overflow-x-auto px-6 mt-8 pb-10 scroll-hide ml-30 mr-30" ref={scrollRef}>
-        <div className="flex gap-9 w-fit">
+        <div className="flex gap-10 w-fit">
           {shortsVideos.map(({ id }) => (
             <div
               key={id}
