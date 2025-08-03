@@ -1,7 +1,7 @@
 "use client";
 
 import { dmSans, lobster } from "@/app/googlefont";
-import Button from "./Button";
+import Button from "../Button";
 
 const welcomeText = `Welcome to Scenery Villas, A collection of four private villas in Bentota, Sri Lanka.
 Each villa offers a unique experience designed for families and groups seeking a serene,
@@ -11,7 +11,7 @@ kids-friendly facilities, and tranquil surroundings.`;
 
 export default function SceneryIntro() {
   return (
-    <section className="bg-white text-gray-800 py-40 px-4 sm:px-8 lg:px-24">
+    <section className="bg-white text-gray-800 py-25 px-4 sm:px-8 lg:px-24">
       <div className="max-w-6xl mx-auto text-center mb-24">
         {/* Heading */}
         <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold mt-8 mb-18 text-green-900`}>
@@ -19,7 +19,7 @@ export default function SceneryIntro() {
         </h1>
 
         {/* Introduction Text */}
-        <p className={`${dmSans.className} text-base sm:text-2xl mb-20 max-w-4xl mx-auto`}>
+        <p className={`${dmSans.className} text-base sm:text-2xl mb-10 max-w-4xl mx-auto`}>
           {welcomeText}
         </p>
 

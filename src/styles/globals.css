@@ -48,3 +48,28 @@ body {
 section {
   transition: background-image 1s ease-in-out;
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+/* Hide scrollbar for horizontal scroll containers */
+.scroll-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
