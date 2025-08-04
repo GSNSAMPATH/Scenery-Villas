@@ -5,7 +5,7 @@ import Button from "../Button";
 
 export default function GetExperience() {
   return (
-    <section className="bg-[var(--background0)] py-30 px-6 md:px-20 ">
+    <section className="bg-[var(--background0)] py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-12">
         {/* Left Content */}
         <div className="flex-1 animate-fade-in text-left">
@@ -26,19 +26,18 @@ export default function GetExperience() {
           </Button>
         </div>
 
-        {/* Right Image Card - Landscape */}
-        {/* <div className="flex-1 animate-fade-in flex justify-center"> */}
-          <div className="bg-white border border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 w-[680px] h-[500px]">
-            <Image
-              src="/Vilacollection/0000001848.jpg"
-              alt="Experience"
-              width={680}
-              height={500}
-              className="object-cover w-full h-full"
-            />
-          </div>
+        {/* Right Image Card - Responsive */}
+        <div className="relative flex-1 animate-fade-in w-full max-w-md md:max-w-none md:w-[680px] aspect-[680/500] bg-white border border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 mx-auto md:mx-0">
+          <Image
+            src="/Vilacollection/0000001848.jpg"
+            alt="Experience"
+            fill
+            sizes="(max-width: 768px) 100vw, 680px"
+            className="object-cover"
+            priority
+          />
         </div>
-      {/* </div> */}
+      </div>
     </section>
   );
 }

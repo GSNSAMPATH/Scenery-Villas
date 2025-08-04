@@ -6,17 +6,17 @@ const villas = [
   {
     name: "Villa Breeze",
     description: "Ocean-view luxury villa with open living space.",
-    img: "/Vilacollection/0000001848.jpg", // Make sure this exists
+    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754320249/WhatsApp_Image_2025-08-03_at_10.38.04_c21be287_pjzltg.jpg", // Make sure this exists
   },
   {
     name: "Palm Retreat",
     description: "Perfect for families, quiet and cozy.",
-    img: "/Vilacollection/0000001848.jpg", // Make sure this exists
+    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754320248/WhatsApp_Image_2025-08-03_at_10.37.27_a809a769_kkjmid.jpg", // Make sure this exists
   },
   {
     name: "Sunset Point",
     description: "Relax with a view of the sunset and garden.",
-    img: "/Vilacollection/0000001848.jpg", // Make sure this exists
+    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754320248/WhatsApp_Image_2025-08-03_at_10.36.55_d819d788_zefhf6.jpg", // Make sure this exists
   },
 ];
 

@@ -7,14 +7,14 @@ export default function GetOffers() {
     <section className="bg-white py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
         {/* Left - Image */}
-        <div className="mt-12 w-full md:w-[680px] h-[500px] bg-white border border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-          {/* Replace with actual image */}
+        <div className="mt-12 w-full md:w-[680px] aspect-[4/3] bg-white border border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 relative">
           <Image
-            src="/Vilacollection/0000001848.jpg" // Replace with real image path
+            src="/Vilacollection/0000001848.jpg"
             alt="Scenery Villa"
-            width={500}
-            height={300}
-            className="w-full h-full object-cover object-center animate-fade-in"
+            fill
+            sizes="(max-width: 768px) 100vw, 680px"
+            className="object-cover object-center animate-fade-in"
+            priority
           />
         </div>
 

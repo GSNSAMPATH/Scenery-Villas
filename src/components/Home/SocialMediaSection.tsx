@@ -121,6 +121,7 @@
 //   );
 // }
 
+// components/YouTubeShortsSection.tsx
 "use client";
 
 import { useEffect, useRef, useMemo } from "react";
@@ -205,7 +206,7 @@ export default function SocialMediaSection() {
   };
 
   return (
-    <section className="bg-[var(--background0)] py-30 text-center relative">
+    <section className="bg-[var(--background0)] py-20 text-center relative">
       <h2 className="text-4xl sm:text-5xl font-bold mb-4">Watch Our YouTube Shorts</h2>
       <p className="text-md sm:text-lg font-medium text-gray-700 max-w-2xl mx-auto mb-8">
         Hover to preview real moments from Scenery Villa – just like YouTube!
@@ -220,31 +221,34 @@ export default function SocialMediaSection() {
         Visit Our YouTube Channel
       </a>
 
-      {/* Scroll Buttons */}
+      {/* Scroll Buttons (hidden on mobile) */}
       <button
         onClick={() => scroll("left")}
-        className="absolute left-2 top-[55%] -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 hidden md:block cursor-pointer mt-10 ml-10"
+        className="absolute left-2 top-[55%] -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 hidden md:block cursor-pointer"
       >
         ◀
       </button>
       <button
         onClick={() => scroll("right")}
-        className="absolute right-2 top-[55%] -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 hidden md:block cursor-pointer mt-10 mr-10"
+        className="absolute right-2 top-[55%] -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 hidden md:block cursor-pointer"
       >
         ▶
       </button>
 
-      {/* Video Scroll Container */}
-      <div className="overflow-x-auto px-6 mt-8 pb-10 scroll-hide ml-30 mr-30" ref={scrollRef}>
-        <div className="flex gap-10 w-fit">
+      {/* Scrollable Video Container */}
+      <div
+        className="overflow-x-auto px-4 md:px-10 pb-10 scroll-hide"
+        ref={scrollRef}
+      >
+        <div className="flex gap-6 md:gap-10 w-fit">
           {shortsVideos.map(({ id }) => (
             <div
               key={id}
-              className="w-[250px] aspect-[9/16] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition relative flex-shrink-0 cursor-pointer"
+              className="w-[160px] md:w-[250px] aspect-[9/16] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition relative flex-shrink-0 cursor-pointer"
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={() => handleMouseLeave(id)}
             >
-              <div id={`player-${id}`} className="w-full h-full pointer-events-none" />
+              <div id={`player-${id}`} className="w-full h-full" />
             </div>
           ))}
         </div>
@@ -252,3 +256,4 @@ export default function SocialMediaSection() {
     </section>
   );
 }
+
