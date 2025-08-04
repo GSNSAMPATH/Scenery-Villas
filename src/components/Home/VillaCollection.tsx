@@ -90,13 +90,13 @@ const villas = [
     name: "Tara Garden",
     description:
       "Beautiful 4-bedroom colonial villa in lush gardens, accommodating 8 guests with a baby pool.",
-    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754319469/WhatsApp_Image_2025-08-03_at_10.37.26_4eeba235_ciwzn2.jpg", // Make sure this image is in /public/Vilacollection
+    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754319469/WhatsApp_Image_2025-08-03_at_10.37.26_4eeba235_ciwzn2.jpg",
   },
   {
     name: "Treetop Resort",
     description:
       "Spacious 5-bedroom villa for up to 25 guests, complete with a baby pool.",
-    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754319111/WhatsApp_Image_2025-08-03_at_10.36.56_362985d9_k8iwhv.jpg", // Also ensure in /public/Vilacollection
+    img: "https://res.cloudinary.com/diatamf9x/image/upload/v1754319111/WhatsApp_Image_2025-08-03_at_10.36.56_362985d9_k8iwhv.jpg",
   },
   {
     name: "Villa Desire",
@@ -130,17 +130,17 @@ export default function VillaCollection() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-4 py-10 ml-10 mr-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-2 sm:px-4 sm:ml-10 sm:mr-10">
         {villas.map((villa, index) => (
           <div
             key={index}
-            className="relative aspect-[3/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all group"
+            className="relative w-full aspect-[4/5] sm:aspect-[3/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all group"
           >
             <Image
               src={villa.img}
               alt={villa.name}
               fill
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 640px) 100vw, 33vw"
               className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
             />
 
