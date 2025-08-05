@@ -37,8 +37,9 @@ const Navbar = () => {
                 <Link href="#" className="block px-4 py-2 hover:text-white">
                   Villa A
                 </Link>
-                <Link href="#" className="block px-4 py-2 hover:text-white">
-                  Villa B
+                {/*taga garden vila link*/ }
+                <Link href="/tara_garden_vila" className="block px-4 py-2 hover:text-white">
+                  Tara Garden Villa
                 </Link>
               </div>
             </div>
