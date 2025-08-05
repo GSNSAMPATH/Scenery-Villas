@@ -1,0 +1,49 @@
+// src/app/tara_garden_vila/page.tsx
+'use client';
+
+
+function Hero() {
+  return (
+    <div className="bg-white">
+      {/* Video Container */}
+      <div className="relative w-full h-[700px] overflow-hidden">
+        {/* Embedded Local Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-[125%] h-[125%] object-cover "
+        >
+          <source src="/tara_garden_vila.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Left-to-right black gradient overlay (covering half of screen) */}
+        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+
+        {/* Text content aligned to the left side */}
+        <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 text-white max-w-[450px] text-left">
+          <h1 className="text-5xl md:text-6xl font-serif mb-4 whitespace-nowrap">
+            Tara Garden Villa
+          </h1>
+          <p className="text-xl md:text-2xl mb-6 mt-4 font-sans">
+            Colonial Style Four Bedroom Family Villa in Bentota - Tara Garden
+          </p>
+          <button className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+            Contact Us
+          </button>
+        </div>
+
+        {/* Scroll Down Icon */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center z-20">
+          <div className="mb-1 text-sm">Scroll Down</div>
+          <div className="text-2xl">⬇️</div>
+        </div>
+          </div>
+        </div>
+      
+        );
+}
+
+export default Hero;
