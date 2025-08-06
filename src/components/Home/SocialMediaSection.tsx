@@ -124,6 +124,7 @@
 // components/YouTubeShortsSection.tsx
 "use client";
 
+import { lobster } from "@/app/googlefont";
 import { useEffect, useRef, useMemo } from "react";
 
 declare global {
@@ -207,14 +208,14 @@ export default function SocialMediaSection() {
 
   return (
     <section className="bg-[var(--background0)] py-20 text-center relative">
-      <h2 className="text-4xl sm:text-5xl font-bold mb-4">Watch Our YouTube Shorts</h2>
-      <p className="text-md sm:text-lg font-medium text-gray-700 max-w-2xl mx-auto mb-8">
+      <h2 className={`${lobster.className} text-4xl text-green-900 sm:text-5xl font-bold mb-8`}>Watch Our YouTube Shorts</h2>
+      <p className="text-md sm:text-lg font-medium text-gray-700 max-w-2xl mx-auto mb-4">
         Hover to preview real moments from Scenery Villa – just like YouTube!
       </p>
 
       <a
         href="https://www.youtube.com/@YourChannelName"
-        className="inline-block bg-yellow-400 text-black font-semibold py-3 px-8 rounded-full mb-10 hover:bg-yellow-300 transition"
+        className="inline-block bg-yellow-400 text-black font-semibold py-3 px-8 rounded-full mb-30 hover:bg-yellow-300 transition"
         target="_blank"
         rel="noopener noreferrer"
       >
