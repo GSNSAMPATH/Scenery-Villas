@@ -20,7 +20,7 @@ export default function Footer() {
             alt="Senery Villa Logo"
             width={160}         // larger width for web
             height={48}         // larger height for web
-            className="object-contain h-8 md:h-30 mb-10 mt-4 w-auto"
+            className="object-contain h-16 md:h-30 mb-10 mt-4 w-auto"
           />
 
 
