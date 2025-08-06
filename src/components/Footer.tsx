@@ -1,3 +1,6 @@
+"use client";
+
+import Link from "next/link";
 import Image from "next/image";
 
 // components/Footer.tsx
@@ -33,19 +36,19 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-6 w-full md:w-1/3">
           <div className="space-y-2">
             <h3 className="font-semibold">Pages</h3>
-            <a href="/" className="hover:underline block">Home</a>
-            <a href="/about" className="hover:underline block">About Us</a>
-            <a href="/gallery" className="hover:underline block">Gallery</a>
-            <a href="/experience" className="hover:underline block">Experience</a>
-            <a href="/reviews" className="hover:underline block">Reviews</a>
-            <a href="/blog" className="hover:underline block">Blog</a>
+              <Link href="/" className="hover:underline block">Home</Link>
+              <Link href="/about" className="hover:underline block">About Us</Link>
+              <Link href="/gallery" className="hover:underline block">Gallery</Link>
+              <Link href="/experience" className="hover:underline block">Experience</Link>
+              <Link href="/reviews" className="hover:underline block">Reviews</Link>
+              <Link href="/blog" className="hover:underline block">Blog</Link>
           </div>
           <div className="space-y-2">
             <h3 className="font-semibold">Our Collection</h3>
-            <a href="/Villa Mandalay" className="hover:underline block">Villa Mandalay</a>
-            <a href="/tara-garden-vila"  className="hover:underline block">Tara Garden</a>
-            <a href="/Treetop Resort" className="hover:underline block">Treetop Resort</a>
-            <a href="/Villa Desire" className="hover:underline block">Villa Desire</a>
+              <Link href="/Villa-Mandalay" className="hover:underline block">Villa Mandalay</Link>
+              <Link href="/tara-garden-vila" className="hover:underline block">Tara Garden</Link>
+              <Link href="/Treetop-Resort" className="hover:underline block">Treetop Resort</Link>
+              <Link href="/Villa-Desire" className="hover:underline block">Villa Desire</Link>
           </div>
         </div>
 
