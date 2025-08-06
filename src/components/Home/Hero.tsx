@@ -1,6 +1,8 @@
 // components/Hero.tsx
 "use client";
 
+import Button from "../Button";
+
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -18,22 +20,20 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* Content */}
-      {/* <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center text-white">
-        <h1 className="text-4xl sm:text-6xl font-bold mb-4">Welcome!</h1>
-        <p className="text-2xl sm:text-4xl italic mb-2">
-          Colonial Style Four Bedroom Family
-        </p>
-        <p className="text-xl sm:text-2xl font-bold mb-6">
-          Villa in Bentota – Tara Garden
-        </p>
-        <a
-          href="#contact"
-          className="inline-block bg-accent text-buttonText font-semibold px-6 py-3 rounded-full shadow-lg hover:opacity-90 transition"
-        >
-          Contact us
-        </a>
-        <p className="mt-6 font-bold">scroll down here ⏷</p>
-      </div> */}
+        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+
+        {/* Text content aligned to the left side */}
+        <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 text-white max-w-[450px] text-left">
+          <h1 className="text-5xl md:text-6xl font-serif mb-4 whitespace-nowrap">
+            Scenery Villas
+          </h1>
+          <p className="text-xl md:text-2xl mb-6 mt-4 font-sans">
+            Explore our beautiful villas, each crafted for comfort, style, and a memorable stay in Sri Lanka.
+          </p>
+          <Button color="white text-black" size="3">
+            Contact Us
+          </Button>
+        </div>
     </section>
   );
 }
