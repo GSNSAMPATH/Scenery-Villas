@@ -1,5 +1,6 @@
 "use client";
 
+import { lobster } from "@/app/googlefont";
 import Image from "next/image";
 
 export default function GetOffers() {
@@ -20,7 +21,7 @@ export default function GetOffers() {
 
         {/* Right - Text Content */}
         <div className="text-center md:text-left max-w-xl animate-fade-in">
-          <h2 className="text-4xl font-bold text-black leading-tight mb-4">
+          <h2 className={`${lobster.className} text-4xl font-bold text-green-900 leading-tight mb-4`}>
             Get Offers with <br /> Scenery
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed">
