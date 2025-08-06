@@ -5,7 +5,7 @@ import Button from "../Button";
 
 export default function GetExperience() {
   return (
-    <section className="bg-[var(--background0)] py-16 px-6 md:px-20">
+    <section className="bg-[var(--background0)] py-20 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-12">
         {/* Left Content */}
         <div className="flex-1 animate-fade-in text-left">

@@ -1,4 +1,4 @@
-import Hero from "@/components/tara_garden_vila/hero";
+import Hero from "@/components/tara-garden-vila/hero";
 
 export default function Home() {
   return (

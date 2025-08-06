@@ -4,21 +4,35 @@
 
 function Hero() {
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       {/* Video Container */}
       <div className="relative w-full h-[700px] overflow-hidden">
         {/* Embedded Local Video */}
-        <video
+         <video
+          src="https://res.cloudinary.com/diatamf9x/video/upload/v1754150334/intro.mp4_d4zljw.mp4"
           autoPlay
           muted
           loop
           playsInline
-          className="absolute top-0 left-0 w-[125%] h-[125%] object-cover "
+          className="absolute inset-0 w-full h-full object-cover z-[-1]"
         >
-          <source src="/tara_garden_vila.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
 
+          Your browser does not support the video tag.
+        </video> 
+
+      {/* <video
+        className="absolute inset-0 w-full h-full object-cover z-[-1]"
+        src="https://res.cloudinary.com/diatamf9x/video/upload/v1754416652/videoplayback_wxsr8s.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      /> */}
+
+
+
+        {/* Overlay */}
         {/* Left-to-right black gradient overlay (covering half of screen) */}
         <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
 
@@ -41,7 +55,7 @@ function Hero() {
           <div className="text-2xl">⬇️</div>
         </div>
           </div>
-        </div>
+        </section>
       
         );
 }

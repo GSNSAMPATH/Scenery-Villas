@@ -1,3 +1,6 @@
+import { Link } from "lucide-react";
+import Image from "next/image";
+
 // components/Footer.tsx
 export default function Footer() {
   return (
@@ -8,8 +11,17 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
 
         {/* Left: Logo and CTA */}
-        <div className="space-y-4 w-full md:w-1/3">
-          <h2 className="text-2xl font-bold">Scenery Villa</h2>
+        <div className="space-y-4 w-full md:w-1/3 flex flex-col items-center ">
+  
+          <Image
+            src="/SVLogoWhite.webp"
+            alt="Senery Villa Logo"
+            width={160}         // larger width for web
+            height={48}         // larger height for web
+            className="object-contain h-8 md:h-30 mb-10 mt-4 w-auto"
+          />
+
+
           <button
             style={{ backgroundColor: "var(--color-primary)", color: "#000" }}
             className="px-6 py-3 rounded-full font-bold"
@@ -22,19 +34,19 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-6 w-full md:w-1/3">
           <div className="space-y-2">
             <h3 className="font-semibold">Pages</h3>
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Gallery</p>
-            <p>Experince</p>
-            <p>Reviews</p>
-            <p>Blog</p>
+            <a href="/" className="hover:underline block">Home</a>
+            <a href="/about" className="hover:underline block">About Us</a>
+            <a href="/gallery" className="hover:underline block">Gallery</a>
+            <a href="/experience" className="hover:underline block">Experience</a>
+            <a href="/reviews" className="hover:underline block">Reviews</a>
+            <a href="/blog" className="hover:underline block">Blog</a>
           </div>
           <div className="space-y-2">
             <h3 className="font-semibold">Our Collection</h3>
-            <p>Villa Mandalay</p>
-            <p>Tara Garden</p>
-            <p>Treetop Resort</p>
-            <p>Villa Desire</p>
+            <a href="/Villa Mandalay" className="hover:underline block">Villa Mandalay</a>
+            <a href="/tara-garden-vila"  className="hover:underline block">Tara Garden</a>
+            <a href="/Treetop Resort" className="hover:underline block">Treetop Resort</a>
+            <a href="/Villa Desire" className="hover:underline block">Villa Desire</a>
           </div>
         </div>
 
