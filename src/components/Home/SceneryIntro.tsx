@@ -12,7 +12,7 @@ kids-friendly facilities, and tranquil surroundings.`;
 export default function SceneryIntro() {
   return (
     <section className="bg-white text-gray-800 py-25 px-4 sm:px-8 lg:px-24">
-      <div className="max-w-6xl mx-auto text-center mb-24">
+      <div className="max-w-6xl mx-auto text-center sm:mb-20 sm:mt-20">
         {/* Heading */}
         <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold mt-8 mb-18 text-green-900`}>
           Scenery Villas Sri Lanka
