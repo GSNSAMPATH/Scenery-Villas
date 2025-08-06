@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Scenery Villa | Luxury Villas in Sri Lanka",
   description: "Experience the beauty of Sri Lanka with our luxury villas, perfect for your next vacation.",
   icons: {
-    icon: "/favicon.ico", // Place favicon in /public
+    icon: "/SVLogoWhite.webp", // Place favicon in /public
   },
 };
 
