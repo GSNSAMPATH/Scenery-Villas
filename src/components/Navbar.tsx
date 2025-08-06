@@ -84,10 +84,10 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-black text-yellow-400 px-4 pb-4 space-y-3 text-base font-medium max-h-[80vh] overflow-y-auto transition-all text-center z-40">
-            <Link href="#" onClick={() => setMenuOpen(false)} className="block">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="block">
               Home
             </Link>
-            <Link href="#" onClick={() => setMenuOpen(false)} className="block">
+            <Link href="/about" onClick={() => setMenuOpen(false)} className="block">
               About Us
             </Link>
 
@@ -127,7 +127,7 @@ const Navbar = () => {
                     Villa A
                   </Link>
                   <Link
-                    href="/tara-garden_vila"
+                    href="/tara-garden-vila"
                     onClick={() => {
                       setMenuOpen(false);
                       setShowCollectionDropdown(false);
