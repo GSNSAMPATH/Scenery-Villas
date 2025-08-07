@@ -39,7 +39,7 @@ const experiences = [
 
 export default function ExperienceCollection() {
   return (
-    <div className="bg-[var(--background1)] py-16 px-6 ">
+    <div className="bg-[var(--background0)] py-16 px-6 ">
       {/* Heading */}
 
 
