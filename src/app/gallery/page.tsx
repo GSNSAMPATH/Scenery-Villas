@@ -76,7 +76,7 @@ export default function GalleryPage() {
   return (
     <main className="bg-white py-40 px-6">
       {/* Heading */}
-      <div className="text-center mb-12 mt-12">
+      <div className="text-center mb-12 md:mt-12">
         <h1 className="text-4xl sm:text-5xl font-bold text-green-900">
           Our Gallery
         </h1>
