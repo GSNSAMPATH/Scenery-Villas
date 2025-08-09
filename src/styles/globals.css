@@ -50,6 +50,27 @@ section {
   transition: background-image 1s ease-in-out;
 }
 
+/* globals.css */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  nav {
+    padding: 0 10px;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+}
+
+
 @keyframes fade-in {
   from {
     opacity: 0;
