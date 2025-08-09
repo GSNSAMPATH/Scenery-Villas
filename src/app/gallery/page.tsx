@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const villaImages = {
+const villaImages: { [key: string]: string[] } = {
   "Villa Mandalay": [
     "/Vilacollection/0000001848.jpg",
     "/Vilacollection/DSC02837HDR-2.jpg",
@@ -43,8 +43,8 @@ const allImages = Object.values(villaImages).flat();
 export default function GalleryPage() {
   const [selectedVilla, setSelectedVilla] = useState("All");
 
-  const displayedImages =
-    selectedVilla === "All" ? allImages : villaImages[selectedVilla];
+const displayedImages =
+  selectedVilla === "All" ? allImages : villaImages[selectedVilla as keyof typeof villaImages];
 
   return (
     <main className="bg-white py-50 px-6">
