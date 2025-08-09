@@ -322,13 +322,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden bg-black text-white px-4 pb-4 space-y-3 text-base font-medium max-h-[80vh] overflow-y-auto transition-all text-center z-40 border-t border-gray-700">
+          <div className="md:hidden bg-black text-white px-4 pb-4 space-y-1 text-base font-medium max-h-[80vh] overflow-y-auto transition-all text-center z-40 border-t border-gray-700">
             {navItems.slice(0, 2).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className={`block py-2 px-4 mx-4 rounded-md transition-all duration-200 ${
+                className={`block py-1 px-4 mx-4 rounded-md mt-2 transition-all duration-200 ${
                   isActive(item.href)
                     ? "bg-white text-black font-semibold"
                     : "text-white hover:text-yellow-400"
