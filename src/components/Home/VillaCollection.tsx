@@ -111,6 +111,11 @@ const villaDescription = `
 `;
 
 export default function VillaCollection() {
+
+  function handleClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
+    window.location.href = "/bookpage";
+  }
+
   return (
     <section className="bg-[var(--background0)] px-4 py-16 text-[var(--foreground)]">
       <div className="max-w-6xl mx-auto text-center">
@@ -124,7 +129,7 @@ export default function VillaCollection() {
           {villaDescription}
         </p>
         <div className="mb-10">
-          <Button color="black text-white mb-4" size="3">
+          <Button color="black text-white mb-4 " onClick={handleClick} size="3">
             Contact US
           </Button>
         </div>

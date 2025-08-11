@@ -3,8 +3,13 @@
 import Image from "next/image";
 import Button from "../Button";
 import { lobster } from "@/app/googlefont";
+import { Console } from "console";
 
 export default function GetExperience() {
+  function handleClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
+    window.location.href = "/experience"
+  }
+
   return (
     <section className="bg-[var(--background0)] py-20 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-12">
@@ -23,7 +28,7 @@ export default function GetExperience() {
             markets, all while savoring delicious Sri Lankan cuisine. Bentota is
             truly a tropical paradise that has something for everyone!
           </p>
-          <Button color="black text-white" size="3">
+          <Button color="black text-white" size="3"  onClick={handleClick} >
             Explore More
           </Button>
         </div>
