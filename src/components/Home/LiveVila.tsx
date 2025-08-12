@@ -1,6 +1,6 @@
 "use client";
 
-import { lobster } from "@/app/googlefont";
+import { dmSans, lobster } from "@/app/googlefont";
 import Image from "next/image";
 
 const villas = [
@@ -29,7 +29,8 @@ export default function LiveVilla() {
         <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold mt-8 mb-18 text-green-900`}>
           Living in Scenery Villas
         </h1>
-        <p className="text-lg max-w-2xl mx-auto text-gray-600">
+        <p className={`${dmSans.className} text-base sm:text-2xl mb-10 max-w-4xl mx-auto`}>
+          {/* "text-lg max-w-2xl mx-auto text-gray-600" */}
           Living in Scenery Villas combines comfort and tranquility. With spacious living areas and family-friendly amenities, it’s the perfect home away from home for unforgettable vacations.
         </p>
       </div>
