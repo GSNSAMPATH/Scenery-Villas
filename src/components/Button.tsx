@@ -41,7 +41,7 @@ const Button: FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const buttonClassName = `bg-${color} font-semibold py-${size} px-${size0} rounded-full shadow hover:bg-${color}-400 transition`;
+  const buttonClassName = `pointer-events-auto cursor-pointer  bg-${color} font-semibold py-${size} px-${size0} rounded-full shadow hover:bg-${color}-400 transition`;
   
   return (
     <button className={buttonClassName} {...props}>

@@ -3,6 +3,7 @@
 
 
 function Hero() {
+  
   return (
     <section className="bg-white">
       {/* Video Container */}

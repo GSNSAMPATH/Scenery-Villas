@@ -4,6 +4,11 @@
 import Button from "../Button";
 
 export default function Hero() {
+
+  function handleClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
+  window.location.href = "/bookpage";
+  }
+
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
@@ -30,7 +35,7 @@ export default function Hero() {
           <p className="text-xl md:text-2xl mb-6 mt-4 font-sans">
             Explore our beautiful villas, each crafted for comfort, style, and a memorable stay in Sri Lanka.
           </p>
-          <Button color="white text-black" size="3">
+          <Button color="white text-black" size="3" onClick={handleClick}>
             Contact Us
           </Button>
         </div>

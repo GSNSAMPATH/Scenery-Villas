@@ -475,8 +475,8 @@ const Navbar = () => {
     { href: "/about", label: "About Us" },
     { href: "/gallery", label: "Gallery" },
     { href: "/experience", label: "Experience" }, // Fixed typo
-    { href: "/reviews", label: "Reviews" },
-    { href: "/blog", label: "Blog" },
+    // { href: "/reviews", label: "Reviews" },
+    { href: "/Blogs", label: "Blog" },
   ];
 
   const collectionItems = [
