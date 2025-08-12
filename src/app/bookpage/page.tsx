@@ -33,7 +33,7 @@ export default function BookPage() {
   };
 
   return (
-    <section className=" mx-auto py-50 bg-gray-100 ">
+    <section className=" mx-auto md:py-50 py-25 bg-gray-100 ">
         <div className=" md:max-w-3xl mx-auto md:bg-white rounded-xl md:shadow-md md:p-20 p-10 ">
       <h1 className="text-3xl font-bold mb-4 text-green-900 text-center mb-10">Book Now</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
