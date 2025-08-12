@@ -1,9 +1,16 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
+      screens: {
+        // iPad Mini landscape & portrait width range
+        'ipad-mini': { 'raw': '(min-width: 768px) and (max-width: 1024px)' },
+      },
       colors: {
         background: "var(--background)",
         background0: "var(--background0)",
@@ -17,7 +24,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
-        lobster: ['var(--font-lobster)', 'cursive'],
+        lobster: ["var(--font-lobster)", "cursive"],
       },
     },
   },

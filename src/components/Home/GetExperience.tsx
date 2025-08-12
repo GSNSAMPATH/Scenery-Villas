@@ -2,14 +2,21 @@
 
 import Image from "next/image";
 import Button from "../Button";
+import { lobster } from "@/app/googlefont";
+import { Console } from "console";
 
 export default function GetExperience() {
+  function handleClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
+    window.location.href = "/experience"
+  }
+
   return (
-    <section className="bg-[var(--background0)] py-16 px-6 md:px-20">
+    <section className="bg-[var(--background0)] py-20 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-12">
         {/* Left Content */}
         <div className="flex-1 animate-fade-in text-left">
-          <h2 className="text-4xl font-bold text-black mb-6">Get Experience</h2>
+          <h2 className={`${lobster.className} text-4xl sm:text-5xl font-bold mb-6 text-green-900`}>Get Experience</h2>
+         
           <p className="text-gray-700 text-lg leading-relaxed mb-8">
             Bentota offers a wonderful mix of experiences for every traveler.
             Enjoy thrilling watersports like jet skiing and snorkeling in its
@@ -21,7 +28,7 @@ export default function GetExperience() {
             markets, all while savoring delicious Sri Lankan cuisine. Bentota is
             truly a tropical paradise that has something for everyone!
           </p>
-          <Button color="black text-white" size="3">
+          <Button color="black text-white" size="3"  onClick={handleClick} >
             Explore More
           </Button>
         </div>
