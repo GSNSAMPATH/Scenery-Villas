@@ -1,6 +1,6 @@
 "use client";
 
-import { lobster } from "@/app/googlefont";
+import { dmSans, lobster } from "@/app/googlefont";
 import Image from "next/image";
 
 export default function GetOffers() {
@@ -10,7 +10,7 @@ export default function GetOffers() {
         {/* Left - Image */}
         <div className="mt-12 w-full md:w-[680px] aspect-[4/3] bg-white border border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 relative">
           <Image
-            src="/Vilacollection/0000001848.jpg"
+            src="https://res.cloudinary.com/diatamf9x/image/upload/v1754319469/WhatsApp_Image_2025-08-03_at_10.37.26_4eeba235_ciwzn2.jpg"
             alt="Scenery Villa"
             fill
             sizes="(max-width: 768px) 100vw, 680px"
@@ -24,7 +24,8 @@ export default function GetOffers() {
           <h2 className={`${lobster.className} text-4xl font-bold text-green-900 leading-tight mb-4`}>
             Get Offers with <br /> Scenery
           </h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className={`${dmSans.className} text-base sm:text-2xl mb-10 max-w-4xl mx-auto`}>
+            {/* "text-gray-700 text-lg leading-relaxed" */}
             Scenery Villas, where every stay is a canvas for making memories that last a lifetime. 
             Our serene abodes are strategically nestled away from the hustle and bustle, 
             providing a tranquil escape for those seeking uninterrupted relaxation.
