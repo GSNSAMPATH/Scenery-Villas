@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { lobster } from "../googlefont";
 
 const villaImages: { [key: string]: string[] } = {
   "Villa Mandalay": [
@@ -50,7 +51,9 @@ const displayedImages =
     <main className="bg-white py-50 px-6">
       {/* Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl sm:text-5xl font-bold text-green-900">
+        <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold text-green-900 leading-tight mb-8`}>
+          
+          {/* "text-4xl sm:text-5xl font-bold text-green-900" */}
           Our Gallery
         </h1>
         <p className="text-lg max-w-xl mx-auto text-gray-600 mt-4">
