@@ -132,7 +132,7 @@ export default function BlogPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-40">
       <h1 className="text-3xl sm:text-4xl md:text-5xl text-gray-800 font-bold mb-8">Blogs</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-12 h">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-12 gap-8 mb-12">
         {blogPosts.map((post, index) => (
           <BlogCard key={index} {...post} />
         ))}
