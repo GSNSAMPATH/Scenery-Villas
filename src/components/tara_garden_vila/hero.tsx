@@ -19,6 +19,9 @@ function Hero() {
           Your browser does not support the video tag.
         </video>
 
+
+        
+
         {/* Left-to-right black gradient overlay (covering half of screen) */}
         <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
 
@@ -36,10 +39,10 @@ function Hero() {
         </div>
 
         {/* Scroll Down Icon */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center z-20">
-          <div className="mb-1 text-sm">Scroll Down</div>
-          <div className="text-2xl">⬇️</div>
-        </div>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center z-20 animate-bounce">
+  <div className="mb-1 text-sm">Scroll Down</div>
+  <div className="text-2xl">⬇️</div>
+</div>
           </div>
         </div>
       
