@@ -17,7 +17,6 @@ function Hero() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-[-1]"
         >
-
           Your browser does not support the video tag.
         </video> 
 
@@ -51,10 +50,10 @@ function Hero() {
         </div>
 
         {/* Scroll Down Icon */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center z-20">
-          <div className="mb-1 text-sm">Scroll Down</div>
-          <div className="text-2xl">⬇️</div>
-        </div>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center z-20 animate-bounce">
+  <div className="mb-1 text-sm">Scroll Down</div>
+  <div className="text-2xl">⬇️</div>
+</div>
           </div>
         </section>
       
