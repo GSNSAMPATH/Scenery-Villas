@@ -1,7 +1,8 @@
+// components/Gallery.tsx
 'use client';
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const images = [
   'https://drive.google.com/uc?export=download&id=1LjlM9s8mDob5CEAoBzUrVvwmvksrtJ9P',
@@ -14,26 +15,30 @@ const images = [
   'https://drive.google.com/uc?export=download&id=1BdT3SSg3LV4hhx-Da7K69InQoLTFfeSU',
   'https://drive.google.com/uc?export=download&id=19WycUKUcOwDsP5qJX-3q7Kub2bgYwmVO',
   'https://drive.google.com/uc?export=download&id=1sMs_ScSmkakalp8iFNpEFLNX6yns5EM9',
-  
 ];
 
 export default function Gallery() {
+  const INITIAL_DESKTOP_COUNT = 6;
+  const [expanded, setExpanded] = useState(false);
+
+  const desktopImages = expanded ? images : images.slice(0, INITIAL_DESKTOP_COUNT);
+
   return (
-    <section className="bg-white text-center py-10 h-screen flex flex-col">
+    <section className="bg-white text-center py-10 flex flex-col h-screen md:h-auto">
       {/* Title */}
       <h2 className="text-2xl md:text-3xl font-bold text-brown-800">
         Gallery By Tara Garden
       </h2>
-      <p className="text-sm md:text-base text-gray-600 mt-2">
+      <p className="text-sm md:text-base text-gray-600 mt-2 max-w-2xl mx-auto">
         Tara Garden is a charming colonial villa that perfectly blends history with modern comforts.
       </p>
 
-      {/* Scrollable Masonry Grid */}
-      <div className="mt-6 flex-1 overflow-y-scroll px-4">
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
+      {/* ===== Mobile View ===== */}
+      <div className="md:hidden mt-6 flex-1 overflow-y-auto px-6">
+        <div className="columns-1 xs:columns-2 sm:columns-2 gap-4">
           {images.map((src, index) => (
             <div
-              key={index}
+              key={`m-${index}`}
               className="mb-4 break-inside-avoid overflow-hidden rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
             >
               <div className="relative w-full h-auto group">
@@ -47,6 +52,47 @@ export default function Gallery() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* ===== Desktop/Tablet View ===== */}
+      <div className="hidden md:block mt-6 px-6 lg:px-20">
+        <div className="columns-2 lg:columns-3 gap-4">
+          {desktopImages.map((src, index) => (
+            <div
+              key={`d-${index}`}
+              className="mb-4 break-inside-avoid overflow-hidden rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="relative w-full h-auto group">
+                <Image
+                  src={src}
+                  alt={`Gallery image ${index + 1}`}
+                  width={800}
+                  height={600}
+                  className="object-cover w-full h-auto transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Buttons */}
+        <div className="mt-6 flex justify-center">
+          {!expanded ? (
+            <button
+              onClick={() => setExpanded(true)}
+              className="px-6 py-3 rounded-lg bg-sky-400 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#7dd3fc]"
+            >
+              See More
+            </button>
+          ) : (
+            <button
+              onClick={() => setExpanded(false)}
+              className="px-6 py-3 rounded-lg bg-sky-400 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#7dd3fc]"
+            >
+              See Less
+            </button>
+          )}
         </div>
       </div>
     </section>
