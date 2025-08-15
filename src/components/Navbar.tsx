@@ -481,7 +481,9 @@ const Navbar = () => {
 
   const collectionItems = [
     { href: "/treetop-vila", label: "Treetop-Villa" },
-    { href: "/tara-garden-vila", label: "Tara Garden Villa" },
+    { href: "/tara-garden-vila", label: "Tara-Garden-Villa"},
+    { href: "/Villa-Mandalay", label: "Villa-Mandalay"},
+
   ];
 
   const currentLogo = getCurrentLogo();

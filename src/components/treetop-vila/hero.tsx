@@ -19,13 +19,17 @@ export default function Hero() {
         Your browser does not support the video tag.
       </video>
 
+      {/* Gradient overlay - full width on mobile, half on larger */}
+      <div className="absolute top-0 left-0 w-full sm:w-1/2 h-full bg-gradient-to-r from-yellow-500 to-transparent z-10 pointer-events-none" />
+
       {/* Text Content */}
-      <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 max-w-[450px] text-white text-left">
-        <h1 className="text-5xl md:text-6xl font-serif mb-4 whitespace-nowrap">
-          Spacious Five Bedroom Villa for Groups
+      <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 max-w-[90%] sm:max-w-[450px] text-white text-left">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-4 leading-tight ">
+          Treetop Resort Villas
+          
         </h1>
-        <p className="text-xl md:text-2xl mb-6 mt-4 font-sans">
-          in Bentota – Treetop Resort
+        <p className="text-base sm:text-xl md:text-2xl mb-6 mt-4 font-sans leading-snug">
+         Spacious Five Bedroom Villa for Groups in Bentota – Treetop Resort
         </p>
         <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition">
           Contact Us
