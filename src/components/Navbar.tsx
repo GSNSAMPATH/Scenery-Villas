@@ -480,7 +480,7 @@ const Navbar = () => {
   ];
 
   const collectionItems = [
-    { href: "/villa-a", label: "Villa A" },
+    { href: "/treetop-vila", label: "Treetop-Villa" },
     { href: "/tara-garden-vila", label: "Tara Garden Villa" },
   ];
 

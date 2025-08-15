@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <section className="bg-white relative w-full h-[700px] md:h-screen overflow-hidden">
-      {/* Video Background */}
+      {/* Optimized Video Background */}
       <video
         autoPlay
         muted
@@ -13,7 +13,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source
-          src="https://res.cloudinary.com/diatamf9x/video/upload/v1754416652/videoplayback_wxsr8s.mp4"
+          src="https://res.cloudinary.com/diatamf9x/video/upload/f_auto,q_auto,w_1280,h_720,c_fill/v1755092614/Best_place_for_Family_gettogethers_Office_crew_outing_Treetop_Resort_by_Scenery_Villas_Bentota_-_Scenery_Villas_Sri_Lanka_720p_h264_lnjakm.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
