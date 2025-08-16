@@ -25,11 +25,11 @@ export default function Hero() {
       {/* Text Content */}
       <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 max-w-[90%] sm:max-w-[450px] text-white text-left">
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-4 leading-tight ">
-          Treetop Resort Villas
+          Villa Mandalay
           
         </h1>
         <p className="text-base sm:text-xl md:text-2xl mb-6 mt-4 font-sans leading-snug">
-         Spacious Five Bedroom Villa for Groups in Bentota – Treetop Resort
+          Spacious Five Bedroom Villa for Groups in Bentota - Villa Mandalay
         </p>
         <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition">
           Contact Us
