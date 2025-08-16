@@ -2,11 +2,24 @@
 
 import { dmSans, lobster } from "@/app/googlefont";
 import Image from "next/image";
+import { Interface } from "readline";
 
-export default function GetOffers() {
+  
+ interface FeaturesSectionProps {
+  titlefont?: string;
+  titlecolore?: string;
+
+}
+
+export default function GetOffers({ 
+  titlefont = lobster.className,
+  titlecolore = "text-green-900",
+
+}: FeaturesSectionProps) {
+
   return (
-    <section className="bg-white py-20 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <section className="bg-white md:py-40 px-6 md:px-20">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Left - Image */}
         <div className="mt-12 w-full md:w-[680px] aspect-[4/3] bg-white border border-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:scale-105 relative">
           <Image
@@ -21,7 +34,7 @@ export default function GetOffers() {
 
         {/* Right - Text Content */}
         <div className="text-center md:text-left max-w-xl animate-fade-in">
-          <h2 className={`${lobster.className} text-4xl font-bold text-green-900 leading-tight mb-4`}>
+          <h2 className={`${titlefont} text-4xl font-bold ${titlecolore} leading-tight mb-4`}>
             Get Offers with <br /> Scenery
           </h2>
           <p className={`${dmSans.className} text-base sm:text-2xl mb-10 max-w-4xl mx-auto`}>

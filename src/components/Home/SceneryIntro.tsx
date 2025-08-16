@@ -3,11 +3,10 @@
 import { dmSans, lobster } from "@/app/googlefont";
 import Button from "../Button";
 
-const welcomeText = `Welcome to Scenery Villas, A collection of four private villas in Bentota, Sri Lanka.
-Each villa offers a unique experience designed for families and groups seeking a serene,
-comfortable retreat. Whether you're planning a family vacation, a group outing, or
-simply a relaxing getaway, Scenery Villas provides spacious accommodations,
-kids-friendly facilities, and tranquil surroundings.`;
+const welcomeText = `Welcome to Scenery Villas, A collection of four private villas in Bentota,
+  Sri Lanka. Each villa offers a unique experience designed for families and groups seeking a serene,
+  comfortable retreat. Whether you're planning a family vacation, a group outing, or simply a relaxing getaway, 
+  Scenery Villas provides spacious accommodations, kids-friendly facilities, and tranquil surroundings.`;
 
 export default function SceneryIntro() {
   function handleClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {

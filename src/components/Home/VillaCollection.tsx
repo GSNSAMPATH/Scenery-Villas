@@ -107,7 +107,14 @@ const villas = [
 ];
 
 const villaDescription = `
-  Villa Mandalay is a cozy 3-bedroom villa for up to 7 guests, featuring spacious living areas and a baby pool, ideal for families. Nearby, Tara Garden is a beautiful 4-bedroom colonial villa nestled in lush gardens, accommodating 8 guests and also offering a baby pool. For larger gatherings, Treetop Resort provides a spacious 5-bedroom villa for up to 25 guests, complete with a baby pool. Finally, Villa Desire is a private 6-bedroom villa for 12 guests, located 2 km from Bentota Beach, perfect for families or groups seeking a peaceful escape.
+  Bentota offers a wonderful mix of experiences for every traveler. 
+  Enjoy thrilling watersports like jet skiing and snorkeling in its beautiful blue waters, 
+  or take a relaxing boat ride along the Bentota River to explore lush mangroves and spot wildlife. 
+  For those looking to unwind, the sandy beaches are perfect for soaking up the sun, 
+  or you can treat yourself to a soothing Ayurvedic spa treatment. 
+  Don’t forget to explore the local culture through nearby temples and markets, 
+  all while savoring delicious Sri Lankan cuisine. 
+  Bentota is truly a tropical paradise that has something for everyone!
 `;
 
 export default function VillaCollection() {
