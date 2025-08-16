@@ -461,7 +461,18 @@ const Navbar = () => {
         src: "/2.png", // Replace with actual Tara Garden Villa logo path
         alt: "Tara Garden Villa Logo"
       };
+    } else if (pathname === "/Villa-Mandalay" || pathname === "/villa-mandalay") {
+      return {
+        src: "/mandalayvillalogo.png", // Replace with actual Villa Mandalay logo path
+        alt: "Villa Mandalay Logo"
+      };
+    } else if (pathname === "/treetop-vila") {
+      return {
+        src: "/LogoTreetop.png", // Replace with actual Treetop Villa logo path
+        alt: "Treetop Villa Logo"
+      };
     }
+
     // Default logo for all other pages
     return {
       src: "/SVLogoWhite.webp",

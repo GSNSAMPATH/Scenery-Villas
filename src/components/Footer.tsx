@@ -102,7 +102,7 @@ export default function Footer() {
   const getCurrentLogo = () => {
     if (pathname === "/Villa-Mandalay" || pathname === "/villa-mandalay") {
       return {
-        src: "/VillaMandalay-Logo.webp", // Replace with actual Villa Mandalay logo path
+        src: "/mandalayvillalogo.png", // Replace with actual Villa Mandalay logo path
         alt: "Villa Mandalay Logo"
       };
     } else if (pathname === "/tara-garden-vila") {
@@ -110,9 +110,9 @@ export default function Footer() {
         src: "/2.png", // Replace with actual Tara Garden Villa logo path
         alt: "Tara Garden Villa Logo"
       };
-    } else if (pathname === "/Treetop-Resort" || pathname === "/treetop-resort") {
+    } else if (pathname === "/Treetop-Resort" || pathname === "/treetop-vila") {
       return {
-        src: "/TreetopResort-Logo.webp", // Replace with actual Treetop Resort logo path
+        src: "/LogoTreetop.png", // Replace with actual Treetop Resort logo path
         alt: "Treetop Resort Logo"
       };
     } else if (pathname === "/Villa-Desire" || pathname === "/villa-desire") {

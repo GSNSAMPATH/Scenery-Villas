@@ -355,8 +355,8 @@ export default function SocialMediaSection() {
   };
 
   return (
-    <section className="bg-[var(--background0)] py-20 text-center relative">
-      <h2 className="text-4xl text-green-900 sm:text-5xl font-bold mb-8">Watch Our YouTube Shorts</h2>
+    <section className="bg-[var(--background0)]  py-20 text-center relative">
+      <h2 className="text-4xl text-green-900 md:mx-auto  sm:text-5xl font-bold mb-8">Watch Our YouTube Shorts</h2>
       <p className="text-md sm:text-lg font-medium text-gray-700 max-w-2xl mx-auto mb-4">
         Hover to preview real moments from Scenery Villa – just like YouTube!
       </p>
@@ -385,7 +385,7 @@ export default function SocialMediaSection() {
       </button>
 
       {/* Scrollable Videos */}
-      <div className="overflow-x-auto px-4 md:px-10 pb-10 scroll-hide" ref={scrollRef}>
+      <div className="overflow-x-auto px-4 md:px-10 md:mx-27 pb-10 scroll-hide" ref={scrollRef}>
         <div className="flex gap-6 md:gap-10 w-fit">
           {shortsVideos.map(({ id }) => (
             <div
