@@ -37,7 +37,7 @@ const VillaDescription: FC<VillaDescriptionProps> = ({
         </h1>
 
         {/* Content grid */}
-        <div className="grid md:grid-cols-2 items-center gap-4 md:mt-10">
+        <div className="grid md:grid-cols-2 items-center gap-4 md:mt-5">
           {/* Villa Image */}
           <div className="relative flex justify-center items-center w-full h-[350px] md:h-[420px] rounded-lg overflow-hidden shadow-lg duration-500 hover:shadow-2xl hover:scale-105">
             <Image
