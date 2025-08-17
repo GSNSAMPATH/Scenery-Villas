@@ -31,7 +31,8 @@ export default function Hero() {
         <p className="text-base sm:text-xl md:text-2xl mb-6 mt-4 font-sans leading-snug">
           Spacious Five Bedroom Villa for Groups in Bentota - Villa Mandalay
         </p>
-        <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition">
+        <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition"
+          onClick={() => window.location.href = "/bookpage"}>
           Contact Us
         </button>
       </div>
