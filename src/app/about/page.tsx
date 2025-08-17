@@ -11,7 +11,7 @@ export default function About() {
            <Aboutcontent/>
            <VillaCollection />
            <LiveVilla />
-           <GetExperience />
+           <GetExperience name={""} description={""} font={""} />
            <GetOffers />
            <SocialMediaSection />
            </>
