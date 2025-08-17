@@ -88,7 +88,22 @@ const villas = [
   },
 ];
 
-export default function GetExperience() {
+interface Scenery {
+  name: string;
+  description: string;
+  font: string;
+  titlecolor?: string;
+  bgColor?: string;
+}
+
+export default function GetExperience({
+  name,
+  description,
+  font = lobster.className,
+  titlecolor = "text-green-900",
+  bgColor = "bg-gray-100",
+
+}: Scenery) {
   const [current, setCurrent] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
 
@@ -126,11 +141,11 @@ export default function GetExperience() {
   }
 
   return (
-    <div className="bg-gray-100 py-16 px-6 overflow-hidden">
+    <div className={`${bgColor} py-16 px-6 overflow-hidden`}>
       {/* Heading */}
       <div className="text-center mb-12 mt-12">
         <h1
-          className={`${lobster.className} text-4xl sm:text-5xl font-bold mt-8 mb-18 text-green-900`}
+          className={`${font} text-4xl sm:text-5xl font-bold mt-8 mb-18 ${titlecolor}`}
         >
           Get Experience
         </h1>

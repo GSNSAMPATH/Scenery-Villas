@@ -77,6 +77,8 @@ interface MapSectionProps {
   streetViewSrc: string;  // Google 360° Street View embed link
   contactEmail: string;
   logo: string;
+  primaryColor?: string;
+  bgColor?: string
 }
 
 export default function MapSection({
@@ -85,9 +87,11 @@ export default function MapSection({
   streetViewSrc,
   contactEmail,
   logo,
+  primaryColor = "bg-white",
+  bgColor = "bg-white"
 }: MapSectionProps) {
   return (
-    <section className="bg-white text-center py-30">
+    <section className= {`${bgColor} text-center py-30`}>
       {/* Title */}
       <h2 className="text-2xl md:text-3xl font-bold text-brown-800">{title}</h2>
 

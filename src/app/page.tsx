@@ -15,7 +15,7 @@ export default function Home() {
       <WhatsAppButton />
       <VillaCollection />
       <LiveVilla />
-      <GetExperience />
+      <GetExperience name={""} description={""} font={""} />
       <GetOffers />
       <SocialMediaSection />
       {/* other sections of your home page */}
