@@ -1,5 +1,6 @@
 // import Hero from "@/components/treetop-vila/hero";
 
+import GetExperience from "@/components/Home/GetExperience";
 import VillaDescription from "@/components/tara-garden-vila/description";
 import FeaturesSection from "@/components/tara-garden-vila/featues";
 import Gallery from "@/components/tara-garden-vila/gallery-tara-garden";
@@ -40,11 +41,12 @@ const taraGardenImages = [
 ];
 
 
-const primaryColor = "bg-orange-400";
+const primaryColor = "bg-orange-100";
 const secondaryColor = "bg-gray-50";
 const fontClass = "font-lobster";
 const textColor = "#000000ff"; // gray-600
 const titleColor = "#16A34A"; // green-600
+const btnColor = "bg-green-700";
 
 export default function Home() {
   return (
@@ -58,7 +60,7 @@ export default function Home() {
           modern amenities and natural serenity. Guests can enjoy scenic views from the
           spacious deck, a private pool, and proximity to Kandy's top attractions."
         image="/Vilacollection/treetop_villa_main.jpg"
-        primaryColor={primaryColor}
+        primaryColor={btnColor}
         secondaryColor={secondaryColor}
         fontClass={fontClass}
         textColor={textColor}
@@ -66,18 +68,29 @@ export default function Home() {
       />
             <FeaturesSection
             title="Villa One Features"
-            bgColor="bg-yellow-100"
+            bgColor={primaryColor}
             textColor = {titleColor}
             features={features}
           />
 
+                   <GetExperience 
+                    name={""} 
+                    description={""} 
+                    font={fontClass}
+                    titlecolor={titleColor} 
+                    bgColor={"bg-white"}/>
+                    
               <Gallery
                 title="Gallery"
                 description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
                 images={taraGardenImages}
                 villaName="Tara Garden"
-                primaryColor="bg-green-500"
+                primaryColor={primaryColor}
+                titleColor={titleColor}
+                btnColor={btnColor}
               />
+
+
 
             <MapSection
               title="Map by Scenery Villa"

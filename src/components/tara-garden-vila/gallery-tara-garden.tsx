@@ -112,6 +112,7 @@ interface GalleryProps {
   villaName: string;
   primaryColor?: string;
   titleColor?: string; // optional (different villa themes)
+  btnColor?: string;
 }
 
 export default function Gallery({
@@ -119,8 +120,9 @@ export default function Gallery({
   description,
   images,
   villaName,
-  primaryColor = "bg-sky-400",
+  primaryColor = "bg-white",
   titleColor = "amber-700",
+  btnColor = "bg-sky-400",
 }: GalleryProps) {
   const INITIAL_DESKTOP_COUNT = 6;
   const [expanded, setExpanded] = useState(false);
@@ -128,12 +130,13 @@ export default function Gallery({
   const desktopImages = expanded ? images : images.slice(0, INITIAL_DESKTOP_COUNT);
 
   return (
-    <section className="bg-white text-center py-10 flex flex-col h-screen md:h-auto">
+    <section className={`${primaryColor} text-center py-10 flex flex-col h-screen md:h-auto`}>
       {/* Title */}
-      <h2 className={`text-${titleColor} text-2xl md:text-3xl font-bold ` }>
+      <h1 className={` text-lg md:text-4xl md:mt-20 md:mb-4 md:text-3xl font-bold ` }
+        style={{ color: titleColor }}>
         {title} By {villaName}
-      </h2>
-      <p className="text-sm md:text-base text-gray-600 mt-2 max-w-2xl mx-auto">
+      </h1>
+      <p className="text-sm md:text-lg md:mb-4 md:text-base text-gray-600 mt-2 max-w-2xl mx-auto">
         {description}
       </p>
 
@@ -185,14 +188,14 @@ export default function Gallery({
           {!expanded ? (
             <button
               onClick={() => setExpanded(true)}
-              className={`px-6 py-3 rounded-lg ${primaryColor} text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#7dd3fc]`}
+              className={`px-6 py-3 rounded-lg ${btnColor} text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#7dd3fc]`}
             >
               See More
             </button>
           ) : (
             <button
               onClick={() => setExpanded(false)}
-              className={`px-6 py-3 rounded-lg ${primaryColor} text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#7dd3fc]`}
+              className={`px-6 py-3 rounded-lg ${btnColor} text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_#7dd3fc]`}
             >
               See Less
             </button>

@@ -54,6 +54,7 @@ interface Feature {
 
 interface FeaturesSectionProps {
   title?: string;
+  titleColor?: string;
   bgColor?: string;
   textColor?: string;
   features: Feature[];
@@ -61,18 +62,19 @@ interface FeaturesSectionProps {
 
 export default function FeaturesSection({
   title = "Features",
+  titleColor = "text-blue-600",
   bgColor = "bg-gray-200",
   textColor = "text-blue-600",
   features,
 }: FeaturesSectionProps) {
   return (
     <section className={`${bgColor} py-30 MD:mx-auto`}>
-      <h2 
-        className={`text-center text-lg font-bold mb-8 md:text-5xl md:mb-20 ${textColor}`}
-        style={{ color: textColor }}
+      <h1 
+        className={`text-center text-lg font-bold mb-8 md:text-5xl md:mb-20`}
+        style={{ color: titleColor }}
         >
         {title}
-      </h2>
+      </h1>
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
         {features.map((feature, index) => (

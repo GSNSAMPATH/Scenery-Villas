@@ -7,10 +7,15 @@ import { FaBed, FaParking, FaSnowflake, FaSwimmingPool, FaTree, FaTv, FaWifi } f
 import { FiWifi } from "react-icons/fi";
 import { GiChefToque } from "react-icons/gi";
 import { MdOutlineKitchen, MdBathroom } from "react-icons/md";
+import GetExperience from "@/components/Home/GetExperience";
 
 const primaryColor = "bg-red-600";
+const bgColor0 = "bg-yellow-100";
 const secondaryColor = "bg-gray-50";
-const fontClass = "font-lobster";
+const fontClass = "font-lato";
+const textColor = "#4B5563"; // gray-600
+const titleColor = "#654632";
+const btnColor = "bg-green-700"; // amber-700
 
 const taraGardenImages = [
    "https://drive.google.com/uc?export=download&id=1LjlM9s8mDob5CEAoBzUrVvwmvksrtJ9P",
@@ -55,21 +60,33 @@ export default function Home() {
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
         fontClass={fontClass}
+        textColor={textColor}
+        titleColor={titleColor}
       />
 
       <FeaturesSection
         title="Villa One Features"
         bgColor="bg-yellow-100"
-        textColor="text-yellow-800"
+        textColor="text-blue-600"
+        titleColor={titleColor}
         features={features}
     />
+
+      <GetExperience 
+      name={""} 
+      description={""} 
+      font={fontClass}
+      titlecolor={titleColor} 
+      bgColor={"bg-white"}/>
 
     <Gallery
       title="Gallery"
       description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
       images={taraGardenImages}
       villaName="Tara Garden"
-      primaryColor="bg-green-500"
+      primaryColor={bgColor0}
+      titleColor={titleColor}
+      btnColor={btnColor}
     />
 
     <MapSection
@@ -78,6 +95,7 @@ export default function Home() {
       streetViewSrc=""
       contactEmail="villa@scenery.com"
       logo="/scenery.png"
+      bgColor="bg-white"
     />
 
     </>
