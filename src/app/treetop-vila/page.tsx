@@ -55,11 +55,8 @@ export default function Home() {
       <VillaDescription
         name="Luxury Family Villa in Kandy – Treetop Resort"
         description="
-          Treetop Resort Villa is a luxurious getaway nestled in the lush hills of Kandy.
-          This 4-bedroom villa accommodates up to 10 guests, offering a perfect blend of
-          modern amenities and natural serenity. Guests can enjoy scenic views from the
-          spacious deck, a private pool, and proximity to Kandy's top attractions."
-        image="/Vilacollection/treetop_villa_main.jpg"
+          Treetop Resort is perfect for large groups looking for a private, spacious villa in Bentota. With 5 bedrooms accommodating up to 25 guests, it’s an ideal location for office outings, family reunions, or group vacations. The villa features a baby pool, making it kids-friendly and suitable for families. The villa’s expansive layout ensures there’s enough space for everyone, while the surrounding greenery provides a peaceful atmosphere. Whether you're planning a company retreat or a family gathering, Treetop Resort offers all the comfort and privacy you need."
+        image="https://lh3.googleusercontent.com/d/1JOpbiOUmrE5XEYXzZEk2BODGV4xWRoWR"
         primaryColor={btnColor}
         secondaryColor={secondaryColor}
         fontClass={fontClass}
@@ -94,7 +91,7 @@ export default function Home() {
         mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.562053466053!2d80.02785838338569!3d6.450227200386593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22d31d1a7b78b%3A0x4cac9913e26791b2!2sTreetop%20Resort%20by%20Scenery%20Villas!5e0!3m2!1sen!2slk!4v1755358165302!5m2!1sen!2slk"
         streetViewSrc="https://www.google.com/maps/embed?pb=!4v1755358037036!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGY0cWZ2Ymc.!2m2!1d6.450227200386593!2d80.02785838338569!3f113.96699501998148!4f-6.031832369001592!5f0.7820865974627469"
         contactEmail="villa@scenery.com"
-        logo="/scenery.png"
+        logo="/LogoTreetop.png"
         primaryColor={primaryColor}
         titleColor={titleColor}
         btnColor={btnColor}

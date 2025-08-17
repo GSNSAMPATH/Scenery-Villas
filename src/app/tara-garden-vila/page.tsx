@@ -44,13 +44,7 @@ export default function Home() {
       <VillaDescription
         name="Colonial Style Four Bedroom Family Villa in Bentota - Tara Garden"
         description="
-             Tara Garden is a charming colonial villa that perfectly blends history
-             with modern comforts. Set amidst tropical greenery, this 4-bedroom
-             villa accommodates up to 8 guests and offers a tranquil space for
-             families to unwind. The villa’s colonial architecture adds a touch of
-             elegance, while the baby pool ensures children are well entertained.
-             Nearby, Tara Garden is a beautiful 4-bedroom colonial villa nestled in
-             lush gardens, accommodating 8 guests and also offering a baby pool."
+             Tara Garden is a charming colonial villa that perfectly blends history with modern comforts. Set amidst tropical greenery, this 4-bedroom villa accommodates up to 8 guests and offers a tranquil space for families to unwind. The villa’s colonial architecture adds a touch of elegance, while the baby pool ensures children are well entertained."
         image="/Vilacollection/DSC02837HDR-2.jpg"
         primaryColor={btnColor}
         secondaryColor={secondaryColor}
@@ -88,7 +82,7 @@ export default function Home() {
         mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.291131168939!2d80.03540055271188!3d6.447643372559895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22dbe17f64441%3A0x918002d13fb4835a!2sTara%20Garden%20by%20Scenery%20Villas%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1755343520866!5m2!1sen!2slk"
         streetViewSrc=""
         contactEmail="villa@scenery.com"
-        logo="/scenery.png"
+        logo="/2.png"
         bgColor="bg-white"
         btnColor={btnColor}
         titleColor={titleColor}
@@ -98,3 +92,4 @@ export default function Home() {
     </>
   );
 }
+

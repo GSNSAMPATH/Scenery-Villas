@@ -184,19 +184,28 @@ export default function Footer() {
         {/* Right: Contact and Newsletter */}
         <div className="space-y-4 w-full md:w-1/3">
           <h3 className="font-semibold">Join our News Alert</h3>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              className="px-4 py-2 rounded-full text-gray-900 w-full sm:w-1/2 placeholder:text-gray-400 placeholder:font-semibold border border-gray-400"
-            />
-            <button
-              style={{ backgroundColor: "var(--color-primary)", color: "#000" }}
-              className="px-5 py-2 rounded-full font-bold"
-            >
-              Subscribe
-            </button>
-          </div>
+           {/* Mailchimp form */}
+  <form
+    action="https://digitalescapeslk.us9.list-manage.com/subscribe/post?u=5670b29db76c562f712305898&amp;id=d37ac9142b&amp;f_id=001b50e1f0"
+    method="POST"
+    target="_blank"
+    className="flex flex-col sm:flex-row gap-2"
+  >
+    <input
+      type="email"
+      name="EMAIL"
+      placeholder="Enter your email"
+      required
+      className="px-4 py-2 rounded-full text-white w-full sm:w-1/2 placeholder:text-gray-400 placeholder:font-semibold border border-gray-400"
+    />
+    <button
+      type="submit"
+      style={{ backgroundColor: "var(--color-primary)", color: "#000" }}
+      className="px-5 py-2 rounded-full font-bold"
+    >
+      Subscribe
+    </button>
+  </form>
           <p className="mt-4">📞 +94 77 908 2515</p>
           <p>📧 sceneryvillassl@gmail.com</p>
           <div className="flex gap-4 text-2xl mt-4">
