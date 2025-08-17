@@ -113,6 +113,7 @@ interface GalleryProps {
   primaryColor?: string;
   titleColor?: string; // optional (different villa themes)
   btnColor?: string;
+  fontClass?: string;
 }
 
 export default function Gallery({
@@ -123,6 +124,7 @@ export default function Gallery({
   primaryColor = "bg-white",
   titleColor = "amber-700",
   btnColor = "bg-sky-400",
+  fontClass = "font-lato",
 }: GalleryProps) {
   const INITIAL_DESKTOP_COUNT = 6;
   const [expanded, setExpanded] = useState(false);
@@ -132,7 +134,7 @@ export default function Gallery({
   return (
     <section className={`${primaryColor} text-center py-10 flex flex-col h-screen md:h-auto`}>
       {/* Title */}
-      <h1 className={` text-lg md:text-4xl md:mt-20 md:mb-4 md:text-3xl font-bold ` }
+      <h1 className={` ${fontClass} text-lg md:text-4xl md:mt-20 md:mb-4 md:text-3xl font-bold ` }
         style={{ color: titleColor }}>
         {title} By {villaName}
       </h1>

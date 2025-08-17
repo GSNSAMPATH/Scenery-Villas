@@ -40,12 +40,7 @@ const features = [
 export default function Home() {
   return (
     <>
-      <Hero 
-        // primaryColor={primaryColor} 
-        // secondaryColor={secondaryColor} 
-        // fontClass={fontClass} 
-      />
-
+      <Hero/>
       <VillaDescription
         name="Colonial Style Four Bedroom Family Villa in Bentota - Tara Garden"
         description="
@@ -57,45 +52,47 @@ export default function Home() {
              Nearby, Tara Garden is a beautiful 4-bedroom colonial villa nestled in
              lush gardens, accommodating 8 guests and also offering a baby pool."
         image="/Vilacollection/DSC02837HDR-2.jpg"
-        primaryColor={primaryColor}
+        primaryColor={btnColor}
         secondaryColor={secondaryColor}
         fontClass={fontClass}
         textColor={textColor}
         titleColor={titleColor}
       />
-
       <FeaturesSection
         title="Villa One Features"
         bgColor="bg-yellow-100"
         textColor="text-blue-600"
         titleColor={titleColor}
         features={features}
-    />
-
+        fontClass={fontClass}
+      />
       <GetExperience 
-      name={""} 
-      description={""} 
-      font={fontClass}
-      titlecolor={titleColor} 
-      bgColor={"bg-white"}/>
-
-    <Gallery
-      title="Gallery"
-      description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
-      images={taraGardenImages}
-      villaName="Tara Garden"
-      primaryColor={bgColor0}
-      titleColor={titleColor}
-      btnColor={btnColor}
-    />
-
-    <MapSection
-      title="Map by Scenery Villa"
-      mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.291131168939!2d80.03540055271188!3d6.447643372559895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22dbe17f64441%3A0x918002d13fb4835a!2sTara%20Garden%20by%20Scenery%20Villas%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1755343520866!5m2!1sen!2slk"
-      streetViewSrc=""
-      contactEmail="villa@scenery.com"
-      logo="/scenery.png"
-      bgColor="bg-white"
+        name={""} 
+        description={""} 
+        font={fontClass}
+        titlecolor={titleColor} 
+        bgColor={"bg-white"}
+        />
+      <Gallery
+        title="Gallery"
+        description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
+        images={taraGardenImages}
+        villaName="Tara Garden"
+        primaryColor={bgColor0}
+        titleColor={titleColor}
+        btnColor={btnColor}
+        fontClass={fontClass}
+        />
+      <MapSection
+        title="Map by Scenery Villa"
+        mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.291131168939!2d80.03540055271188!3d6.447643372559895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22dbe17f64441%3A0x918002d13fb4835a!2sTara%20Garden%20by%20Scenery%20Villas%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1755343520866!5m2!1sen!2slk"
+        streetViewSrc=""
+        contactEmail="villa@scenery.com"
+        logo="/scenery.png"
+        bgColor="bg-white"
+        btnColor={btnColor}
+        titleColor={titleColor}
+        fontClass={fontClass}
     />
 
     </>

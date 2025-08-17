@@ -59,6 +59,7 @@ const VillaDescription: FC<VillaDescriptionProps> = ({
             </p>
             <button
               className={`${primaryColor} text-white px-6 py-2 rounded-lg hover:opacity-90 transition`}
+              onClick={() => window.location.href = "/bookpage"}
             >
               Book Now
             </button>

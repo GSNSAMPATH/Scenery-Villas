@@ -34,10 +34,10 @@ const taraGardenImages = [
 const primaryColor = "bg-orange-400";
 const bgColor0 = "bg-orange-100";
 const secondaryColor = "bg-gray-50";
-const fontClass = "font-lobster";
+const fontClass = "font-nunito";
 const textColor = "#4B5563"; // gray-600
 const titleColor = "#EA5D9A"; // amber-700
-
+const btnColor = "bg-orange-400";
 export default function Home() {
   return (
     <>
@@ -54,35 +54,40 @@ export default function Home() {
         titleColor={titleColor}
       />
       <FeaturesSection
-       title="Villa One Features"
-       bgColor={bgColor0}
-       textColor = {titleColor}
-       features={features}
-                />
-                   <GetExperience 
-                    name={""} 
-                    description={""} 
-                    font={fontClass}
-                    titlecolor={titleColor} 
-                    bgColor={"bg-white"}/>
+        title="Villa One Features"
+        bgColor={bgColor0}
+        textColor = {titleColor}
+        features={features}
+        titleColor={titleColor}
+        fontClass={fontClass}
+      />
+      <GetExperience 
+        name={""} 
+        description={""} 
+        font={fontClass}
+        titlecolor={titleColor} 
+        bgColor={"bg-white"}/>
       <Gallery
-      title="Gallery"
-      description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
-      images={taraGardenImages}
-      villaName="Tara Garden"
-      primaryColor={bgColor0}
-      titleColor={titleColor}
+        title="Gallery"
+        description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
+        images={taraGardenImages}
+        villaName="Villa Mandalay"
+        primaryColor={bgColor0}
+        titleColor={titleColor}
+        btnColor={btnColor}
+        fontClass={fontClass}
         />              
-
-  
-
-        <MapSection
-          title="Map by Scenery Villa"
-          bgColor="bg-white"
-          mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.56147319093!2d80.02268447928022!3d6.450301376887283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22dc65a994b87%3A0x10f4d014bef0a799!2sVilla%20Mandalay%20by%20Scenery%20Villas%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1755344043422!5m2!1sen!2slk"
-          streetViewSrc="https://www.google.com/maps/embed?pb=!4v1755355883176!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREg0TWZ6S2c.!2m2!1d6.450236102438017!2d80.0275312745208!3f324.9880977966791!4f-1.0620615719108883!5f0.7820865974627469"
-          contactEmail="villa@scenery.com"
-          logo="/mandalayvillalogo.png"
+      <MapSection
+        title="Map by Scenery Villa"
+        bgColor="bg-white"
+        mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.56147319093!2d80.02268447928022!3d6.450301376887283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22dc65a994b87%3A0x10f4d014bef0a799!2sVilla%20Mandalay%20by%20Scenery%20Villas%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1755344043422!5m2!1sen!2slk"
+        streetViewSrc="https://www.google.com/maps/embed?pb=!4v1755355883176!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREg0TWZ6S2c.!2m2!1d6.450236102438017!2d80.0275312745208!3f324.9880977966791!4f-1.0620615719108883!5f0.7820865974627469"
+        contactEmail="villa@scenery.com"
+        logo="/mandalayvillalogo.png"
+        btnColor={btnColor}
+        titleColor={titleColor}
+        fontClass={fontClass}
+       
         />
        
     </>

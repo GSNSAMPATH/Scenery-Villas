@@ -58,6 +58,7 @@ interface FeaturesSectionProps {
   bgColor?: string;
   textColor?: string;
   features: Feature[];
+  fontClass?: string;
 }
 
 export default function FeaturesSection({
@@ -66,11 +67,12 @@ export default function FeaturesSection({
   bgColor = "bg-gray-200",
   textColor = "text-blue-600",
   features,
+  fontClass = "font-Lato",
 }: FeaturesSectionProps) {
   return (
     <section className={`${bgColor} py-30 MD:mx-auto`}>
       <h1 
-        className={`text-center text-lg font-bold mb-8 md:text-5xl md:mb-20`}
+        className={`${fontClass} text-center text-lg font-bold mb-8 md:text-5xl md:mb-20`}
         style={{ color: titleColor }}
         >
         {title}

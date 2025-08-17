@@ -73,12 +73,15 @@
 
 interface MapSectionProps {
   title: string;
+  titleColor?: string
   mapSrc: string;         // Google Maps Embed link
   streetViewSrc: string;  // Google 360° Street View embed link
   contactEmail: string;
   logo: string;
   primaryColor?: string;
   bgColor?: string
+  btnColor?: string
+  fontClass?: string
 }
 
 export default function MapSection({
@@ -88,17 +91,21 @@ export default function MapSection({
   contactEmail,
   logo,
   primaryColor = "bg-white",
-  bgColor = "bg-white"
+  bgColor = "bg-white",
+  titleColor = "text-brown-800",
+  btnColor = "bg-green-700",
+  fontClass = "font-Lato"
 }: MapSectionProps) {
   return (
     <section className= {`${bgColor} text-center py-30`}>
       {/* Title */}
-      <h2 className="text-2xl md:text-3xl font-bold text-brown-800">{title}</h2>
+      <h2 className={`${fontClass} text-2xl md:text-3xl font-bold`}
+      style={{ color: titleColor }}>{title}</h2>
 
       {/* Contact Button */}
       <a
-        href={`mailto:${contactEmail}`}
-        className="inline-block mt-3 px-6 py-2 bg-green-700 text-white font-semibold rounded-full hover:bg-green-800 transition md:mb-20"
+        href={"/bookpage"}
+        className={`inline-block mt-3 px-6 py-2 ${btnColor} text-white font-semibold rounded-full hover:bg-green-800 transition md:mb-20`}
       >
         Contact Us
       </a>

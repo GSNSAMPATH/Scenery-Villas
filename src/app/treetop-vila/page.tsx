@@ -46,7 +46,7 @@ const secondaryColor = "bg-gray-50";
 const fontClass = "font-lobster";
 const textColor = "#000000ff"; // gray-600
 const titleColor = "#16A34A"; // green-600
-const btnColor = "bg-green-700";
+const btnColor = "bg-orange-400";
 
 export default function Home() {
   return (
@@ -66,39 +66,40 @@ export default function Home() {
         textColor={textColor}
         titleColor={titleColor}
       />
-            <FeaturesSection
-            title="Villa One Features"
-            bgColor={primaryColor}
-            textColor = {titleColor}
-            features={features}
-          />
-
-                   <GetExperience 
-                    name={""} 
-                    description={""} 
-                    font={fontClass}
-                    titlecolor={titleColor} 
-                    bgColor={"bg-white"}/>
-                    
-              <Gallery
-                title="Gallery"
-                description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
-                images={taraGardenImages}
-                villaName="Tara Garden"
-                primaryColor={primaryColor}
-                titleColor={titleColor}
-                btnColor={btnColor}
-              />
-
-
-
-            <MapSection
-              title="Map by Scenery Villa"
-              mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.562053466053!2d80.02785838338569!3d6.450227200386593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22d31d1a7b78b%3A0x4cac9913e26791b2!2sTreetop%20Resort%20by%20Scenery%20Villas!5e0!3m2!1sen!2slk!4v1755358165302!5m2!1sen!2slk"
-              streetViewSrc="https://www.google.com/maps/embed?pb=!4v1755358037036!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGY0cWZ2Ymc.!2m2!1d6.450227200386593!2d80.02785838338569!3f113.96699501998148!4f-6.031832369001592!5f0.7820865974627469"
-              contactEmail="villa@scenery.com"
-              logo="/scenery.png"
-           />
+      <FeaturesSection
+        title="Villa One Features"
+        bgColor={primaryColor}
+        textColor = {titleColor}
+        features={features}
+        />
+      <GetExperience 
+        name={""} 
+        description={""} 
+        font={fontClass}
+        titlecolor={titleColor} 
+        bgColor={"bg-white"}
+       />                  
+      <Gallery
+        title="Gallery"
+        description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
+        images={taraGardenImages}
+        villaName="TreeTop Villa"
+        primaryColor={primaryColor}
+        titleColor={titleColor}
+        btnColor={btnColor}
+        fontClass={fontClass}
+      />
+      <MapSection
+        title="Map by Scenery Villa"
+        mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.562053466053!2d80.02785838338569!3d6.450227200386593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22d31d1a7b78b%3A0x4cac9913e26791b2!2sTreetop%20Resort%20by%20Scenery%20Villas!5e0!3m2!1sen!2slk!4v1755358165302!5m2!1sen!2slk"
+        streetViewSrc="https://www.google.com/maps/embed?pb=!4v1755358037036!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGY0cWZ2Ymc.!2m2!1d6.450227200386593!2d80.02785838338569!3f113.96699501998148!4f-6.031832369001592!5f0.7820865974627469"
+        contactEmail="villa@scenery.com"
+        logo="/scenery.png"
+        primaryColor={primaryColor}
+        titleColor={titleColor}
+        btnColor={btnColor}
+        fontClass={fontClass}
+      />
     </>
   );
 }
