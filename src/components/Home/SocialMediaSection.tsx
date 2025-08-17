@@ -281,11 +281,9 @@ export default function SocialMediaSection() {
       { id: "rAp94KYD0A4" },
       { id: "MSz7wG2iOww" },
       { id: "YKm6cm54-po" },
-      { id: "vYjBSdY3pUc" },
-      { id: "4rZzPYHtcVY" },
-      { id: "nS3PYnHgC2s" },
-      { id: "6qlMjFgIgxo" },
-      { id: "E8RH11BslRg" },
+      { id: "RZBnokNDT1U" },
+      { id: "Vkkeu-NA-jQ" },
+      { id: "3ZmV8tLAl1I" },
     ],
     []
   );
@@ -362,7 +360,7 @@ export default function SocialMediaSection() {
       </p>
 
       <a
-        href="https://www.youtube.com/@YourChannelName"
+        href="https://www.youtube.com/@SceneryvillasSrilanka"
         className="inline-block bg-yellow-400 text-black font-semibold py-3 px-8 rounded-full mb-30 hover:bg-yellow-300 transition"
         target="_blank"
         rel="noopener noreferrer"
