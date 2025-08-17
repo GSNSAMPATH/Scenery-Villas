@@ -122,7 +122,7 @@ export default function GetExperience({
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 

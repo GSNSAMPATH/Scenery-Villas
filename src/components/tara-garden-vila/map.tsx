@@ -140,7 +140,7 @@ export default function MapSection({
       </div>
 
       {/* Logo */}
-      <div className="mt-6">
+      <div className="mt-6 md:mt-20">
         <img src={logo} alt={`${title} Logo`} className="mx-auto w-48" />
       </div>
     </section>
