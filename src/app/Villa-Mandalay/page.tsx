@@ -45,7 +45,14 @@ export default function Home() {
       <VillaDescription
         name="Family Friendly Three Bedroom Villa in Bentota - Villa Mandalay"
         description="
-          Villa Mandalay is a peaceful retreat for families looking to unwind in Bentota. This 3-bedroom villa accommodates up to 7 guests and is designed with families in mind. The baby pool offers a safe and fun space for children, while the surrounding countryside provides a serene backdrop for relaxation. Enjoy spacious bedrooms, a comfortable living area, and plenty of outdoor space to soak up the beauty of Bentota. Whether you're lounging by the baby pool or exploring the nearby attractions, Villa Mandalay is the perfect base for your family holiday."
+          Villa Mandalay is a peaceful retreat for families looking to unwind in Bentota. 
+          This 3-bedroom villa accommodates up to 7 guests and is designed with families in mind. 
+          The baby pool offers a safe and fun space for children, 
+          while the surrounding countryside provides a serene backdrop for relaxation. 
+          Enjoy spacious bedrooms, a comfortable living area, and plenty of outdoor space to soak up the beauty of Bentota. 
+          Whether you're lounging by the baby pool or exploring the nearby attractions, 
+          Villa Mandalay is the perfect base for your family holiday."
+        
         image="https://lh3.googleusercontent.com/d/1NydD--eQ-ZxYy_5Xq_bttVMjZwCNGzhv"
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
@@ -66,7 +73,8 @@ export default function Home() {
         description={""} 
         font={fontClass}
         titlecolor={titleColor} 
-        bgColor={"bg-white"}/>
+        bgColor={"bg-white"}
+      />
       <Gallery
         title="Gallery"
         description="Tara Garden is a charming colonial villa that perfectly blends history with modern comforts."
