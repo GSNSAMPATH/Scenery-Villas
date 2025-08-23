@@ -260,6 +260,7 @@
 
 "use client";
 
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect, useRef, useMemo } from "react";
 
 interface Video {
@@ -369,7 +370,7 @@ export default function SocialMediaSection() {
       </a>
 
       {/* Scroll Buttons */}
-      <button
+      {/* <button
         onClick={() => scroll("left")}
         className="absolute left-2 top-[55%] -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 hidden md:block cursor-pointer"
       >
@@ -380,7 +381,20 @@ export default function SocialMediaSection() {
         className="absolute right-2 top-[55%] -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 hidden md:block cursor-pointer"
       >
         ▶
-      </button>
+      </button> */}
+        <button
+          onClick={() => scroll("left")}
+          className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white md:ml-25 md:mt-25"
+        >
+          <ChevronLeft className="w-6 h-6 text-green-900" />
+        </button>
+        <button
+          onClick={() => scroll("right")}
+          className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white md:mr-25 md:mt-25"
+        >
+        <ChevronRight className="w-6 h-6 text-green-900" />
+        </button>
+
 
       {/* Scrollable Videos */}
       <div className="overflow-x-auto px-4 md:px-10 md:mx-27 pb-10 scroll-hide" ref={scrollRef}>
