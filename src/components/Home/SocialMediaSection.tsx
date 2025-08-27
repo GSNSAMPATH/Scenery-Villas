@@ -382,19 +382,19 @@ export default function SocialMediaSection() {
       >
         ▶
       </button> */}
-        <button
-          onClick={() => scroll("left")}
-          className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white md:ml-25 md:mt-25"
-        >
-          <ChevronLeft className="w-6 h-6 text-green-900" />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white md:mr-25 md:mt-25"
-        >
-        <ChevronRight className="w-6 h-6 text-green-900" />
-        </button>
+      <button
+        onClick={() => scroll("left")}
+        className="hidden md:flex absolute top-1/2 md:-left-10 transform -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white md:ml-25 md:mt-25"
+      >
+        <ChevronLeft className="w-6 h-6 text-green-900" />
+      </button>
 
+      <button
+        onClick={() => scroll("right")}
+        className="hidden md:flex absolute top-1/2 md:-right-10 transform -translate-y-1/2 bg-white/70 p-3 rounded-full shadow hover:bg-white md:mr-25 md:mt-25"
+      >
+        <ChevronRight className="w-6 h-6 text-green-900" />
+      </button>
 
       {/* Scrollable Videos */}
       <div className="overflow-x-auto px-4 md:px-10 md:mx-27 pb-10 scroll-hide" ref={scrollRef}>
