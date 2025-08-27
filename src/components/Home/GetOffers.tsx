@@ -52,7 +52,6 @@
 "use client";
 
 import { dmSans, lobster } from "@/app/googlefont";
-import Image from "next/image";
 
 interface FeaturesSectionProps {
   titlefont?: string;
@@ -64,25 +63,22 @@ export default function GetOffers({
   titlecolore = "text-green-900",
 }: FeaturesSectionProps) {
   return (
-    <section className="relative w-full h-screen">
-      {/* Fullscreen Image */}
-      <Image
-        src="https://res.cloudinary.com/diatamf9x/image/upload/v1754319469/WhatsApp_Image_2025-08-03_at_10.37.26_4eeba235_ciwzn2.jpg"
-        alt="Scenery Villa"
-        fill
-        priority
-        className="object-cover object-center"
-      />
-
-      {/* Overlay content */}
-      <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-6">
+    <section
+      className="relative w-full h-screen bg-fixed bg-center bg-cover"
+      style={{
+        backgroundImage:
+          "url('https://res.cloudinary.com/diatamf9x/image/upload/v1754319469/WhatsApp_Image_2025-08-03_at_10.37.26_4eeba235_ciwzn2.jpg')",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center  text-center px-6 `">
         <h2
-          className={`${titlefont} text-4xl md:text-6xl font-bold ${titlecolore} leading-tight mb-6`}
+          className={`${titlefont} text-4xl md:text-6xl font-bold ${titlecolore} leading-tight mb-6 text-white`}
         >
           Get Offers with <br /> Scenery
         </h2>
         <p
-          className={`${dmSans.className} text-lg md:text-2xl text-white max-w-3xl`}
+          className={`${dmSans.className} text-lg md:text-2xl text-white max-w-4xl`}
         >
           Scenery Villas, where every stay is a canvas for making memories that
           last a lifetime. Our serene abodes are strategically nestled away from
@@ -93,4 +89,3 @@ export default function GetOffers({
     </section>
   );
 }
-
