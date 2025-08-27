@@ -88,7 +88,7 @@ export default function ExperienceCollection() {
               src={item.image}
               alt={item.title}
               fill
-              className="object-cover object-center h-30 w-full"
+              className="object-cover object-center h-20 w-full"
               sizes="(max-width: 640px) 100vw, 50vw "
               priority={index === 0}
             />
@@ -98,7 +98,7 @@ export default function ExperienceCollection() {
                 transition-opacity duration-300 p-5 flex flex-col justify-end"
             >
               <h3 className="text-white text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-white text-sm">{item.description}</p>
+              <p className="text-white text-lg text-left">{item.description}</p>
             </div>
           </div>
         ))}
