@@ -486,7 +486,7 @@ const Navbar = () => {
     { href: "/about", label: "About Us" },
     { href: "/gallery", label: "Gallery" },
     { href: "/experience", label: "Experience" }, // Fixed typo
-    // { href: "/reviews", label: "Reviews" },
+     { href: "/Review", label: "Reviews" },
     { href: "/Blogs", label: "Blog" },
   ];
 

@@ -145,7 +145,7 @@ export default function GetExperience({
       {/* Heading */}
       <div className="text-center mb-12 mt-12">
         <h1
-          className={`${font} text-4xl sm:text-5xl font-bold mt-8 mb-18 ${titlecolor}`}
+          className={`${lobster.className} text-4xl sm:text-5xl  mt-8 mb-18 ${titlecolor}`}
         >
           Get Experience
         </h1>
