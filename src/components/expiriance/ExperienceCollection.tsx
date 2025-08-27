@@ -2,6 +2,8 @@
 
 import { lobster } from "@/app/googlefont";
 import Image from "next/image";
+import { title } from "process";
+import { MdDescription } from "react-icons/md";
 
 const experiences = [
   {
@@ -33,7 +35,38 @@ const experiences = [
     title: "Bentota river fishing",
     description: "The Bentota River, winding its way through the lush landscapes of Sri Lanka, offers an angler's paradise,a haven where the thrill of catching a prized fish meets the serenity of nature's embrace. As you castyour line into the shimmering waters, anticipation builds, the gentle tug of the river promising arewarding encounter with the diverse aquatic life that thrives within its depths.",
     image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225071/g6_wuwvlu.webp",
+  },
+  {
+    title: "Wood carvings and masks",
+    description: "Tangalle Beach is a wide, palm-lined beach located in the southern part of Sri Lanka. It's less crowded and offers a peaceful atmosphere for sunbathing and swimming. Tangalle is also known for its rich marine biodiversity.",
+    image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225075/g7_yqn0d2.webp",
+  },
+  {
+    title: "Kandeviharaya temple",
+    description: "As you approach the temple, a sense of calm washes over you, the gentle breeze carrying the soothingsounds of chanting monks. The air is filled with the fragrance of incense, mingling with the sweet aromaof frangipani flowers that adorn the temple grounds. Step inside the temple's main hall, and your eyes are immediately drawn to the magnificent Buddhastatue, its serene expression radiating an aura of peace.", 
+    image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225074/g8_zdwsvt.webp",
+  },
+  {
+    title: "Ayurveda",
+    description: "nder the guidance of experienced Ayurvedic practitioners, you will undergo a comprehensiveassessment to determine your unique constitution, or prakriti. This assessment involves observing yourphysical characteristics, analyzing your lifestyle habits, and understanding your emotional tendencies. Based on your prakriti, a personalized treatment plan will be tailored to address your specific needs.",
+    image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225073/g9_n1hhk8.webp",
+  },
+  {
+    title: "Beruwala fish market",
+    description: "The bustling Beruwala Fish Market, nestled along the vibrant coastline of Sri Lanka, is a kaleidoscope ofcolors, aromas, and sounds, a testament to the island's rich fishing heritage and culinary traditions. Asyou step into this lively marketplace, your senses are immediately awakened by the vibrant hues offreshly caught seafood, the tantalizing aroma of spices wafting through the air, and the lively chatter ofvendors and buyers.",    
+    image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225073/g10_mnkhh5.webp",  
+  },
+  {
+    title: "Get More Experience with Scenery",
+    //description: "nder the guidance of experienced Ayurvedic practitioners, you will undergo a comprehensiveassessment to determine your unique constitution, or prakriti. This assessment involves observing yourphysical characteristics, analyzing your lifestyle habits, and understanding your emotional tendencies. Based on your prakriti, a personalized treatment plan will be tailored to address your specific needs.",
+    image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225073/kevin-olson-ScBHbYokiQE-unsplash_atallt.webp",
+  },
+  {
+    title:"Brief garden",
+    description:"A sanctuary of tranquility and botanical wonders. Once a rubber plantation, this enchanting estate hasbeen transformed into a masterpiece of landscape architecture, a testament to the visionary artistry ofBevis Bawa. As you step through the garden's gates, a sense of serenity washes over you, the gentle rustling of leavesand the chirping of birds creating a symphony of nature's embrace. Meandering pathways, adorned withvibrant blooms and verdant foliage, beckon you to explore the garden's hidden treasures.",
+    image: "https://res.cloudinary.com/diatamf9x/image/upload/v1756225073/g11_b6xl5c.webp",
   }
+
 ];
 
 
