@@ -105,7 +105,7 @@ const displayedImages =
   selectedVilla === "All" ? allImages : villaImages[selectedVilla as keyof typeof villaImages];
 
   return (
-    <main className="bg-white py-50 px-6">
+    <main className="bg-gray-100 py-50 px-6">
       {/* Heading */}
       <div className="text-center mb-8">
         <h1 className={`${lobster.className} text-4xl sm:text-5xl font-bold text-green-900 leading-tight mb-8`}>
