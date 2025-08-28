@@ -2,12 +2,12 @@
 import Image from "next/image";
 
 const guestImages = [
-   { id: 1, src: "/guests/guest1.jpg", name: "Sophia" },
-  { id: 2, src: "/guests/guest2.jpg", name: "Matthew" },
-  { id: 3, src: "/guests/guest3.jpg", name: "Ava" },
-  { id: 4, src: "/guests/guest4.jpg", name: "Daniel" },
-  { id: 5, src: "/guests/guest5.jpg", name: "Christopher" },
-  { id: 6, src: "/guests/guest6.jpg", name: "Melinda" },
+  { id: 1, src: "https://thumbs.dreamstime.com/z/cute-smiling-girl-wonderful-cute-white-smile-red-lips-look-sunset-sit-hills-mountains-summer-has-good-time-69895542.jpg?ct=jpeg", name: "Sophia" },
+  { id: 2, src: "https://thumbs.dreamstime.com/z/smiling-young-pretty-girl-sitting-grass-25817110.jpg?ct=jpeg", name: "Matthew" },
+  { id: 3, src: "https://thumbs.dreamstime.com/z/young-cute-woman-posing-green-park-cheerful-62977900.jpg?ct=jpeg", name: "Ava" },
+  { id: 4, src: "https://thumbs.dreamstime.com/z/cute-baby-green-park-caucasian-boy-summer-40431747.jpg?ct=jpeg", name: "Daniel" },
+  { id: 5, src: "https://thumbs.dreamstime.com/z/young-man-park-laptop-sitting-grass-40270977.jpg?ct=jpeg", name: "Christopher" },
+  { id: 6, src: "https://thumbs.dreamstime.com/z/cute-smiling-girl-wonderful-cute-white-smile-red-lips-look-sunset-sit-hills-mountains-summer-has-good-time-69895542.jpg?ct=jpeg", name: "Melinda" },
 ];
 
 export default function GuestImages() {
@@ -48,7 +48,7 @@ export default function GuestImages() {
         {/* Upload Section */}
         <div className="mt-16 text-center">
           <h3 className="text-xl font-semibold mb-4">Want to share your memories?</h3>
-          <button className="px-6 py-3 bg-orange-500 text-white rounded-full font-medium shadow hover:bg-orange-600 transition">
+          <button className="px-6 py-3 bg-black font-weight text-white rounded-full font-medium shadow hover:bg-orange-600 transition">
             Upload Your Photo
           </button>
         </div>
