@@ -10,7 +10,7 @@ import { MdOutlineKitchen, MdBathroom } from "react-icons/md";
 import GetExperience from "@/components/Home/GetExperience";
 
 const primaryColor = "bg-red-600";
-const bgColor0 = "bg-yellow-100";
+const bgColor0 = "bg-blue-200";
 const secondaryColor = "bg-gray-50";
 const fontClass = "font-lato";
 const textColor = "#4B5563"; // gray-600
@@ -85,7 +85,7 @@ export default function Home() {
       />
       <FeaturesSection
         title="Villa One Features"
-        bgColor="bg-yellow-100"
+        bgColor={bgColor0}
         textColor="text-blue-600"
         titleColor={titleColor}
         features={features}

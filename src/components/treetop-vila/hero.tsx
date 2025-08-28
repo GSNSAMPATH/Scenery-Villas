@@ -20,7 +20,7 @@ export default function Hero() {
       </video>
 
       {/* Gradient overlay - full width on mobile, half on larger */}
-      <div className="absolute top-0 left-0 w-full sm:w-1/2 h-full bg-gradient-to-r from-yellow-500 to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full sm:w-1/2 h-full bg-gradient-to-r from-orange-300 to-transparent z-10 pointer-events-none" />
 
       {/* Text Content */}
       <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 max-w-[90%] sm:max-w-[450px] text-white text-left">
