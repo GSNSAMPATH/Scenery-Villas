@@ -10,9 +10,27 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["res.cloudinary.com", "drive.google.com","lh3.googleusercontent.com"  ], // 👈 add more domains here if needed
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "drive.google.com",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "thumbs.dreamstime.com",
+        pathname: "/z/**", // 👈 allows /z/ path with any image
+      },
+    ],
   },
 };
 
-
 export default nextConfig;
+
