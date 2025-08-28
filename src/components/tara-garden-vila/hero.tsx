@@ -20,7 +20,7 @@ export default function Hero() {
       </video>
 
       {/* Gradient overlay - full width on mobile, half on larger */}
-      <div className="absolute top-0 left-0 w-full sm:w-1/2 h-full bg-gradient-to-r from-blue-500 to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full sm:w-1/2 h-full bg-gradient-to-r from-blue-400 to-transparent z-10 pointer-events-none" />
 
       {/* Text Content */}
       <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-20 max-w-[90%] sm:max-w-[450px] text-white">
@@ -28,7 +28,7 @@ export default function Hero() {
           Tara Garden Villa
         </h1>
         <p className="text-base sm:text-lg md:text-2xl mb-6 mt-4 font-sans leading-snug">
-          Colonial Style Four Bedroom Family Villa in Bentota - Tara Garden
+          Colonial Style Four Bedroom Family Villa in Bentota - Tara Garden.
         </p>
 
         <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition"
